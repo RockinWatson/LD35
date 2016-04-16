@@ -69,16 +69,30 @@ if keyboard_check_pressed(vk_up){
 if option = 0 {
     x = eagle_attacks.x+125
     y = eagle_attacks.y+20
+    
+    if keyboard_check_pressed(vk_enter){
+        global.enemy_health -= 25;
+    }
 }
+
+
 
 if option = 1 {
     x = eagle_attacks.x+125
     y = eagle_attacks.y+50
+    
+        if keyboard_check_pressed(vk_enter){
+        global.enemy_health -= 33;
+    }
 }
 
 if option = 2 {
     x = eagle_attacks.x+125
     y = eagle_attacks.y+75
+    
+        if keyboard_check_pressed(vk_enter){
+        global.enemy_health -= 60;
+    }
 }
 </string>
           </argument>
