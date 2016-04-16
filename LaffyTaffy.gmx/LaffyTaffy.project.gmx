@@ -8,15 +8,46 @@
   <sprites name="sprites">
     <sprites name="Player">
       <sprite>sprites\s_player</sprite>
+      <sprites name="Battle">
+        <sprite>sprites\s_battle_deer</sprite>
+        <sprite>sprites\s_battle_eagle</sprite>
+        <sprite>sprites\s_battle_bass</sprite>
+      </sprites>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\s_truck</sprite>
       <sprite>sprites\s_helicopter</sprite>
       <sprite>sprites\s_fisherman</sprite>
+      <sprites name="Battle">
+        <sprite>sprites\s_battle_fisherman</sprite>
+        <sprite>sprites\s_battle_helicopter</sprite>
+        <sprite>sprites\s_battle_truck</sprite>
+      </sprites>
     </sprites>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <backgrounds name="Battle">
+      <background>background\battle_scene</background>
+    </backgrounds>
+  </backgrounds>
   <paths name="paths"/>
+  <objects name="objects">
+    <objects name="Battle">
+      <objects name="Player">
+        <object>objects\battle_deer</object>
+        <object>objects\battle_eagle</object>
+        <object>objects\battle_bass</object>
+      </objects>
+      <objects name="Enemies">
+        <object>objects\battle_truck</object>
+        <object>objects\battle_helicopter</object>
+        <object>objects\battle_fisherman</object>
+      </objects>
+    </objects>
+    <objects name="Controllers">
+      <object>objects\room_controller</object>
+    </objects>
+  </objects>
   <rooms name="rooms">
     <room>rooms\J_TestRoom</room>
     <room>rooms\S_TestRoom</room>
