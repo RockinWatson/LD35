@@ -11,6 +11,8 @@
         <sprite>sprites\s_battle_deer</sprite>
         <sprite>sprites\s_battle_eagle</sprite>
         <sprite>sprites\s_battle_bass</sprite>
+        <sprite>sprites\s_eagle_attacks</sprite>
+        <sprite>sprites\s_selection_arrow</sprite>
       </sprites>
       <sprites name="OverWorld">
         <sprite>sprites\s_ow_deer</sprite>
@@ -53,6 +55,13 @@
         <object>objects\battle_truck</object>
         <object>objects\battle_helicopter</object>
         <object>objects\battle_fisherman</object>
+      </objects>
+      <objects name="Battle Controllers">
+        <object>objects\turn_order</object>
+      </objects>
+      <objects name="Attacks">
+        <object>objects\eagle_attacks</object>
+        <object>objects\selection_arrow</object>
       </objects>
     </objects>
     <objects name="Controllers">
