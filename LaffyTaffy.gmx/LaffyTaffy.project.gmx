@@ -32,6 +32,9 @@
         <sprite>sprites\s_ow_fisherman</sprite>
       </sprites>
     </sprites>
+    <sprites name="OverWorld">
+      <sprite>sprites\s_player_blocker</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Battle">
@@ -82,6 +85,10 @@
         <object>objects\o_ow_truck_spawner</object>
         <object>objects\o_ow_helicopter_spawner</object>
         <object>objects\o_ow_fisherman_spawner</object>
+      </objects>
+      <objects name="Environment">
+        <object>objects\o_ow_player_blocker_down</object>
+        <object>objects\o_ow_player_blocker_up</object>
       </objects>
     </objects>
   </objects>

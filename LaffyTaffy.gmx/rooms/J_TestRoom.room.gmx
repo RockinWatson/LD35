@@ -4,7 +4,7 @@
   <width>1280</width>
   <height>720</height>
   <vsnap>10</vsnap>
-  <hsnap>32</hsnap>
+  <hsnap>10</hsnap>
   <isometric>0</isometric>
   <speed>30</speed>
   <persistent>0</persistent>
@@ -52,9 +52,14 @@
   </views>
   <instances>
     <instance objName="room_controller" x="-32" y="-32" name="inst_905868C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_ow_deer" x="32" y="160" name="inst_20FFD7B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_deer" x="40" y="170" name="inst_20FFD7B0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_truck" x="1088" y="160" name="inst_AF85D63B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_ow_truck" x="1312" y="450" name="inst_285E4895" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_truck_spawner" x="1312" y="350" name="inst_15A58009" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_truck_spawner" x="1312" y="210" name="inst_846FC683" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_truck_spawner" x="1312" y="510" name="inst_3DB1EA9D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_truck_spawner" x="1312" y="640" name="inst_4B0F41B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_player_blocker_down" x="120" y="650" name="inst_6694718F" locked="0" code="" scaleX="6.5" scaleY="0.8125" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_player_blocker_up" x="120" y="220" name="inst_EB2FA30D" locked="0" code="" scaleX="6.96774196624756" scaleY="1.03125" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
