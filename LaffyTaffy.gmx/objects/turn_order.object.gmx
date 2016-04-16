@@ -50,17 +50,17 @@ global.player_turn = true;
           <argument>
             <kind>1</kind>
             <string>if instance_exists (battle_helicopter){
-    global.player_health -= 25;
+    global.player_health -= random_range(10, 15);
     global.player_menu = false;
     }
 
 if instance_exists (battle_truck){
-    global.player_health -= 25;
+    global.player_health -= random_range(10, 15);
     global.player_menu = false;
     }
 
 if instance_exists (battle_fisherman){
-    global.player_health -= 25;
+    global.player_health -= random_range(10, 15);
     global.player_menu = false;
     }
 
