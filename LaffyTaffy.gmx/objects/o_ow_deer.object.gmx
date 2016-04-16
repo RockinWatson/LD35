@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>jump_distance = 140;
+side_distance = 100;
 </string>
           </argument>
         </arguments>
@@ -50,20 +51,37 @@
             <kind>1</kind>
             <string>go_up = keyboard_check_pressed(vk_up);
 go_down = keyboard_check_pressed(vk_down);
+go_right = keyboard_check_pressed(vk_right);
+go_left = keyboard_check_pressed(vk_left)
 
 
-//Player Movement
+//Player Movement UP/Down
 if place_meeting(x,y,o_ow_player_blocker_up) and go_up
 {
     y = o_ow_deer.y;
 }else if go_up and !place_meeting(x,y,o_ow_player_blocker_up){
     y -= jump_distance;
 }
+
 if place_meeting(x,y,o_ow_player_blocker_down) and go_down
 {
     y = o_ow_deer.y;
 }else if go_down and !place_meeting(x,y,o_ow_player_blocker_down){
     y += jump_distance;
+}
+
+//PLayer movement side by side
+if place_meeting(x,y,o_ow_blocker_right) and go_right
+{
+    x = o_ow_deer.x;
+}else if go_right and !place_meeting(x,y,o_ow_blocker_right){
+    x += side_distance;
+}
+if place_meeting(x,y,o_ow_player_blocker_left) and go_left
+{
+    x = o_ow_deer.x;
+}else if go_left and !place_meeting(x,y,o_ow_player_blocker_left){
+    x -= side_distance;
 }
 
 //Player Collision

@@ -129,6 +129,8 @@
         <object>objects\o_ow_player_blocker_down</object>
         <object>objects\o_ow_player_blocker_up</object>
         <object>objects\o_ow_enemy_destroy</object>
+        <object>objects\o_ow_player_blocker_left</object>
+        <object>objects\o_ow_blocker_right</object>
       </objects>
     </objects>
   </objects>
