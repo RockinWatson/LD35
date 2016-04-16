@@ -26,51 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>global.seconds = 0;
-
 global.countUp = false;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>roomname = room_get_name(room);
-
-//determine if you are in a OverWorld level to start timer
-if roomname == "rm_ow_deer" or roomname == "rm_ow_eagle" or roomname == "rm_ow_bass"
-{
-    global.countUp = true;
-}else{
-    global.countUp = false;
-}
-
-//Count Up by seconds
-if (global.countUp == true)
-{
-    global.seconds += 1/room_speed;
-}
-
-if (global.seconds == 30)
-{
-    room_goto(rm_ow_bass);
-} 
-
 </string>
           </argument>
         </arguments>

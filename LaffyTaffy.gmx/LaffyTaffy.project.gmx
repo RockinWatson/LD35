@@ -103,9 +103,8 @@
         </objects>
       </objects>
       <objects name="Controllers">
-        <object>objects\o_ow_helicopter_spawner</object>
-        <object>objects\o_ow_level_timer</object>
-        <object>objects\o_ow_fisherman_spawner</object>
+        <object>objects\o_ow_level_timer_initial</object>
+        <object>objects\o_ow_level_timer_count</object>
         <objects name="Trucks">
           <object>objects\o_ow_truck_spawner_1</object>
           <object>objects\o_ow_truck_spawner_2</object>
