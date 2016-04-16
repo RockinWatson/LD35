@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>global.enemy_health = 100;
+global.enemy_ap = 3;
 </string>
           </argument>
         </arguments>
