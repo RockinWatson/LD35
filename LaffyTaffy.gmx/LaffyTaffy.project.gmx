@@ -62,6 +62,7 @@
       </objects>
       <objects name="Battle Controllers">
         <object>objects\turn_order</object>
+        <object>objects\health_bars</object>
       </objects>
       <objects name="Attacks">
         <object>objects\eagle_attacks</object>

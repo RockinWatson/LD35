@@ -48,7 +48,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if keyboard_check_pressed(vk_down){
+            <string>//Arrow Movement
+if keyboard_check_pressed(vk_down){
     option += 1
     
     if option &gt; 2{
@@ -65,13 +66,15 @@ if keyboard_check_pressed(vk_up){
 }
 
 
-
+//Attacks
 if option = 0 {
     x = eagle_attacks.x+125
     y = eagle_attacks.y+20
     
     if keyboard_check_pressed(vk_enter){
         global.enemy_health -= 25;
+        global.player_turn = false;
+        instance_destroy();
     }
 }
 
@@ -82,7 +85,9 @@ if option = 1 {
     y = eagle_attacks.y+50
     
         if keyboard_check_pressed(vk_enter){
-        global.enemy_health -= 33;
+        global.enemy_health -= 45;
+        global.player_turn = false;
+        instance_destroy();
     }
 }
 
@@ -91,7 +96,9 @@ if option = 2 {
     y = eagle_attacks.y+75
     
         if keyboard_check_pressed(vk_enter){
-        global.enemy_health -= 60;
+        global.enemy_health -= 70;
+        global.player_turn = false;
+        instance_destroy();
     }
 }
 </string>
