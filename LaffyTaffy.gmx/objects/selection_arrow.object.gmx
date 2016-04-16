@@ -165,12 +165,14 @@ if item_menu = 1 &amp;&amp; keyboard_check_pressed (vk_up){
 }
 
 //Item Menu Select
+//HP Potion
 if item_option = 0 &amp;&amp; item_menu = 1  {
     x = battle_items.x + 165;
     y = battle_items.y + 18;
         
-            if keyboard_check_pressed (vk_enter){
-            global.player_health += 45
+            if keyboard_check_pressed (vk_enter) &amp;&amp; global.hp_potion &gt; 0{
+            global.player_health += 45;
+            global.hp_potion -=1;
             item_menu = 0;
             global.player_turn = false;
             instance_destroy();
@@ -181,12 +183,14 @@ if item_option = 0 &amp;&amp; item_menu = 1  {
         }
 }
 
+//AP Potion
 if item_option = 1 &amp;&amp; item_menu = 1 {
     x = battle_items.x + 165;
     y = battle_items.y + 50
     
-    if keyboard_check_pressed (vk_enter){
+    if keyboard_check_pressed (vk_enter) &amp;&amp; global.ap_potion &gt; 0{
         global.ap += 3;
+        global.ap_potion -=1;
         item_menu = 0;
         global.player_turn = false;
         instance_destroy();
