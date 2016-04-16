@@ -56,7 +56,6 @@
     <instance objName="health_bars" x="64" y="128" name="inst_3B46DCFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="battle_eagle" x="1088" y="416" name="inst_3D833FAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="battle_helicopter" x="160" y="416" name="inst_AA3C7834" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="&lt;undefined&gt;" x="96" y="128" name="inst_0194ECDD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

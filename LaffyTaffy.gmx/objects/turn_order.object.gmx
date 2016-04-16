@@ -99,12 +99,16 @@ if global.enemy_health &lt;= 0 {
     item_roll = irandom_range (1, 3);
         if item_roll = 1{
             hp_notify = true;
+            global.hp_potion +=1;
         }
         if item_roll = 2{
             ap_notify = true;
+            global.ap_potion +=1;
         }
         if item_roll = 3{
             hp_ap_notify = true;
+            global.hp_potion +=1;
+            global.ap_potion +=1;
         }
 }
 </string>

@@ -67,6 +67,7 @@
         <object>objects\turn_order</object>
         <object>objects\health_bars</object>
         <object>objects\variable_init</object>
+        <object>objects\Battle_Messages</object>
       </objects>
       <objects name="Attacks">
         <object>objects\eagle_attacks</object>
