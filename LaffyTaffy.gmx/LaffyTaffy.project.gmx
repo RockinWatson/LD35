@@ -14,6 +14,8 @@
         <sprite>sprites\s_eagle_attacks</sprite>
         <sprite>sprites\s_selection_arrow</sprite>
         <sprite>sprites\s_battle_items</sprite>
+        <sprite>sprites\s_hp_pickup</sprite>
+        <sprite>sprites\s_ap_pickup</sprite>
       </sprites>
       <sprites name="OverWorld">
         <sprite>sprites\s_ow_deer</sprite>
@@ -70,6 +72,10 @@
         <object>objects\eagle_attacks</object>
         <object>objects\selection_arrow</object>
         <object>objects\battle_items</object>
+      </objects>
+      <objects name="Pickup Notifications">
+        <object>objects\hp_pickup</object>
+        <object>objects\ap_pickup</object>
       </objects>
     </objects>
     <objects name="Controllers">

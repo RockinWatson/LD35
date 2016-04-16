@@ -29,6 +29,11 @@
 global.player_turn = true;
 enemy_roll = false;
 enemy_action = 0;
+battle_over = false;
+item_roll = 0;
+hp_notify = false;
+ap_notify = false;
+hp_ap_notify = false;
 </string>
           </argument>
         </arguments>
@@ -90,6 +95,18 @@ if instance_exists (battle_fisherman){
     global.player_menu = false;
     }
 
+if global.enemy_health &lt;= 0 {
+    item_roll = irandom_range (1, 3);
+        if item_roll = 1{
+            hp_notify = true;
+        }
+        if item_roll = 2{
+            ap_notify = true;
+        }
+        if item_roll = 3{
+            hp_ap_notify = true;
+        }
+}
 </string>
           </argument>
         </arguments>
@@ -126,6 +143,40 @@ if global.player_turn = false {
             instance_destroy();
         }
     alarm[0] = 90;
+}
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if hp_notify = true{
+    draw_sprite(s_hp_pickup, 0, 640, 300);
+}
+if ap_notify = true{
+    draw_sprite(s_ap_pickup, 0, 640, 300);
+}
+if hp_ap_notify = true{
+    draw_sprite(s_hp_pickup, 0, 640, 300);
+    draw_sprite(s_ap_pickup, 0, 640, 375);
 }
 </string>
           </argument>

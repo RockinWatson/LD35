@@ -60,6 +60,18 @@ if global.enemy_health &gt; 100{
 if (global.ap &lt; 0){
     global.ap = 0;
 }
+
+if (global.enemy_ap &lt; 0){
+    global.enemy_ap = 0;
+}
+
+if (global.hp_potion &lt; 0) {
+    global.hp_potion = 0;
+}
+
+if (global.ap_potion &lt; 0) {
+    global.ap_potion = 0;
+}
 </string>
           </argument>
         </arguments>
