@@ -25,8 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>random_set_seed(current_second*current_hour*current_minute);
-top_num = floor(random(100));
+            <string>randomize()
+spawn_time = 200;
+alarm[0] = irandom(spawn_time);
 </string>
           </argument>
         </arguments>
@@ -50,35 +51,7 @@ top_num = floor(random(100));
           <argument>
             <kind>1</kind>
             <string>instance_create(x,y,o_ow_truck);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>randomize()
-spawn_time = 20;
-if irandom(top_num) == irandom_range(30,35)
-{
-    alarm[0] = spawn_time;
-}
-
+alarm[0] = irandom_range(spawn_time/2,spawn_time);
 </string>
           </argument>
         </arguments>
