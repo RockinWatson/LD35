@@ -55,6 +55,11 @@ draw_healthbar(100, 50, 300, 75, global.enemy_health, c_black, c_red, c_lime, 0,
 
 //Player Health
 draw_healthbar(850, 50, 1050, 75, global.player_health, c_black, c_red, c_lime, 0, true, true)
+
+if (global.crit = true){
+    draw_set_colour(c_white)
+    draw_text_colour(640, 200, "Critical Hit!", c_red, c_red, c_orange, c_orange, 1);
+}
 </string>
           </argument>
         </arguments>
