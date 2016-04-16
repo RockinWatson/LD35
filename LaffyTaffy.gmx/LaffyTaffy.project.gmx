@@ -7,27 +7,38 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="Player">
-      <sprite>sprites\s_player</sprite>
       <sprites name="Battle">
         <sprite>sprites\s_battle_deer</sprite>
         <sprite>sprites\s_battle_eagle</sprite>
         <sprite>sprites\s_battle_bass</sprite>
       </sprites>
+      <sprites name="OverWorld">
+        <sprite>sprites\s_ow_deer</sprite>
+        <sprite>sprites\s_ow_eagle</sprite>
+        <sprite>sprites\s_ow_bass</sprite>
+      </sprites>
     </sprites>
     <sprites name="Enemies">
-      <sprite>sprites\s_truck</sprite>
-      <sprite>sprites\s_helicopter</sprite>
-      <sprite>sprites\s_fisherman</sprite>
       <sprites name="Battle">
         <sprite>sprites\s_battle_fisherman</sprite>
         <sprite>sprites\s_battle_helicopter</sprite>
         <sprite>sprites\s_battle_truck</sprite>
+      </sprites>
+      <sprites name="OverWorld">
+        <sprite>sprites\s_ow_helicopter</sprite>
+        <sprite>sprites\s_ow_truck</sprite>
+        <sprite>sprites\s_ow_fisherman</sprite>
       </sprites>
     </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Battle">
       <background>background\battle_scene</background>
+    </backgrounds>
+    <backgrounds name="OverWorld">
+      <background>background\bg_ow_deer</background>
+      <background>background\bg_ow_eagle</background>
+      <background>background\bg_ow_bass</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
@@ -46,6 +57,23 @@
     </objects>
     <objects name="Controllers">
       <object>objects\room_controller</object>
+    </objects>
+    <objects name="OverWorld">
+      <objects name="Player">
+        <object>objects\o_ow_deer</object>
+        <object>objects\o_ow_eagle</object>
+        <object>objects\o_ow_bass</object>
+      </objects>
+      <objects name="Enemies">
+        <object>objects\o_ow_helicopter</object>
+        <object>objects\o_ow_truck</object>
+        <object>objects\o_ow_fisherman</object>
+      </objects>
+      <objects name="Controllers">
+        <object>objects\o_ow_truck_spawner</object>
+        <object>objects\o_ow_helicopter_spawner</object>
+        <object>objects\o_ow_fisherman_spawner</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
