@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>jump_distance = 140;
-side_distance = 100;
+side_distance = 140;
 </string>
           </argument>
         </arguments>

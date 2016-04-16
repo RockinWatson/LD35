@@ -33,6 +33,13 @@
         <sprite>sprites\s_ow_helicopter</sprite>
         <sprite>sprites\s_ow_truck</sprite>
         <sprite>sprites\s_ow_fisherman</sprite>
+        <sprites name="Hooks">
+          <sprite>sprites\s_ow_hook_1</sprite>
+          <sprite>sprites\s_ow_hook_2</sprite>
+          <sprite>sprites\s_ow_hook_3</sprite>
+          <sprite>sprites\s_ow_hook_4</sprite>
+          <sprite>sprites\s_ow_hook_5</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprites name="OverWorld">
