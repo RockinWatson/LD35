@@ -13,6 +13,7 @@
         <sprite>sprites\s_battle_bass</sprite>
         <sprite>sprites\s_eagle_attacks</sprite>
         <sprite>sprites\s_selection_arrow</sprite>
+        <sprite>sprites\s_battle_items</sprite>
       </sprites>
       <sprites name="OverWorld">
         <sprite>sprites\s_ow_deer</sprite>
@@ -63,10 +64,12 @@
       <objects name="Battle Controllers">
         <object>objects\turn_order</object>
         <object>objects\health_bars</object>
+        <object>objects\variable_init</object>
       </objects>
       <objects name="Attacks">
         <object>objects\eagle_attacks</object>
         <object>objects\selection_arrow</object>
+        <object>objects\battle_items</object>
       </objects>
     </objects>
     <objects name="Controllers">
@@ -136,6 +139,10 @@
       <room>rooms\rm_ow_deer</room>
       <room>rooms\rm_ow_eagle</room>
       <room>rooms\rm_ow_bass</room>
+    </rooms>
+    <rooms name="Battle">
+      <room>rooms\variable_init_room</room>
+      <room>rooms\battle_test</room>
     </rooms>
   </rooms>
   <help>

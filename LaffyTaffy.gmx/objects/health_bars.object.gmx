@@ -25,9 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.player_health = 100;
-global.enemy_health = 100;
-global.ap = 3;
+            <string>global.enemy_health = 100;
 </string>
           </argument>
         </arguments>
@@ -95,7 +93,8 @@ if (global.crit = true){
     draw_text_colour(640, 200, "Critical Hit!", c_red, c_red, c_orange, c_orange, 1);
 }
 
-draw_text_colour(800, 150, "AP: " + string(global.ap), c_red, c_red, c_dkgray, c_dkgray, 1);
+//AP
+draw_text_colour(950, 100, "AP: " + string(global.ap), c_red, c_red, c_dkgray, c_dkgray, 1);
 </string>
           </argument>
         </arguments>
