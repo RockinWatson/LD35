@@ -28,11 +28,11 @@
             <string>//Truck Speed
 x -= 5;
 
-if place_meeting(x,y,o_ow_truck)
+if place_meeting(x,y,o_ow_truck_2)
 {
     instance_destroy();   
 }
-if distance_to_object(o_ow_truck) &lt; 5 &amp;&amp; !place_meeting(x,y,o_ow_truck)
+if distance_to_object(o_ow_truck_2) &lt; 2 &amp;&amp; !place_meeting(x,y,o_ow_truck_2)
 {
     instance_destroy();
 } 
