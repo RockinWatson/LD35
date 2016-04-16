@@ -75,6 +75,7 @@
         <object>objects\health_bars</object>
         <object>objects\variable_init</object>
         <object>objects\Battle_Messages</object>
+        <object>objects\enemy_message</object>
       </objects>
       <objects name="Attacks">
         <object>objects\eagle_attacks</object>

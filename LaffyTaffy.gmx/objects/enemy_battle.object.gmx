@@ -8,38 +8,6 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>global.player_menu = false;
-global.player_turn = true;
-global.enemy_turn = false;
-enemy_roll = false;
-enemy_action = 0;
-battle_over = false;
-item_roll = 0;
-hp_notify = false;
-ap_notify = false;
-hp_ap_notify = false;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
@@ -57,24 +25,21 @@ hp_ap_notify = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//ENEMY TURN
+            <string>//Enemy attack phase
+//ENEMY TURN
 
 //Enemy Dice Roll
 enemy_roll = true;
 
 if enemy_roll = true {
-    enemy_action = irandom_range(1, 5);    
+    enemy_action = irandom_range(1, 4);    
 }
 
 //Enemy Chooses Attack
 
 //Helicopter Attacks
 
-if enemy_action = 4{
-    global.player_menu = false
-    instance_create (0,0,enemy_message)
-}
-else if enemy_action = 3 &amp;&amp; instance_exists (battle_helicopter) &amp;&amp; global.enemy_ap &gt;=1 &amp;&amp; global.enemy_health &lt;= 60{
+if enemy_action = 3 &amp;&amp; instance_exists (battle_helicopter) &amp;&amp; global.enemy_ap &gt;=1 &amp;&amp; global.enemy_health &lt;= 60{
     global.enemy_health += 35
     global.player_menu = false
     global.enemy_ap -= 1;
@@ -138,54 +103,7 @@ if global.enemy_health &lt;= 0 {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Create Attack Menu//
-if global.player_menu = false {
-    instance_create(800, 150, eagle_attacks);
-    global.player_menu = true;
-}
-
-
-//Enemy Attack Phase//
-if global.player_turn == false {
-    global.enemy_turn = true;
-    global.player_turn = true;
-        with (eagle_attacks){
-            instance_destroy();
-        }
-  alarm[0] = 90;
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if hp_notify = true{
-    draw_sprite(s_hp_pickup, 0, 640, 300);
-}
-if ap_notify = true{
-    draw_sprite(s_ap_pickup, 0, 640, 300);
-}
-if hp_ap_notify = true{
-    draw_sprite(s_hp_pickup, 0, 640, 300);
-    draw_sprite(s_ap_pickup, 0, 640, 375);
-}
+            <string>alarm [0] = 90;
 </string>
           </argument>
         </arguments>
