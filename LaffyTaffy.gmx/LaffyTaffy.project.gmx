@@ -87,6 +87,7 @@
         <object>objects\o_ow_truck_spawner</object>
         <object>objects\o_ow_helicopter_spawner</object>
         <object>objects\o_ow_fisherman_spawner</object>
+        <object>objects\o_ow_truck_spawner2</object>
       </objects>
       <objects name="Environment">
         <object>objects\o_ow_player_blocker_down</object>

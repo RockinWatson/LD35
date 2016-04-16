@@ -74,11 +74,10 @@ top_num = floor(random(100));
             <kind>1</kind>
             <string>randomize()
 spawn_time = 20;
-if irandom(top_num) == irandom_range(30,35)
+if irandom(top_num) == irandom_range(60,65)
 {
     alarm[0] = spawn_time;
 }
-
 </string>
           </argument>
         </arguments>

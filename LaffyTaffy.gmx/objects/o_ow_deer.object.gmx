@@ -52,18 +52,24 @@
 go_down = keyboard_check_pressed(vk_down);
 
 
+//Player Movement
 if place_meeting(x,y,o_ow_player_blocker_up) and go_up
 {
     y = o_ow_deer.y;
 }else if go_up and !place_meeting(x,y,o_ow_player_blocker_up){
     y -= jump_distance;
 }
-
 if place_meeting(x,y,o_ow_player_blocker_down) and go_down
 {
     y = o_ow_deer.y;
 }else if go_down and !place_meeting(x,y,o_ow_player_blocker_down){
     y += jump_distance;
+}
+
+//Player Collision
+if place_meeting(x,y,o_ow_truck)
+{
+    room_goto(S_TestRoom);
 }
 </string>
           </argument>
