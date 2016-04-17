@@ -71,7 +71,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>    draw_text_colour(950, 150, "MISS!", c_red, c_red, c_dkgray, c_dkgray, 1);
+            <string>    draw_text_colour(150, 300, "MISS!", c_red, c_red, c_dkgray, c_dkgray, 1);
 </string>
           </argument>
         </arguments>
