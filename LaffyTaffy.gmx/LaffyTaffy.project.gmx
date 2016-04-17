@@ -49,6 +49,21 @@
       <sprite>sprites\s_ow_blue_spinner</sprite>
       <sprite>sprites\s_ow_orange_spinner</sprite>
     </sprites>
+    <sprites name="Battle Attacks">
+      <sprite>sprites\s_ap_up</sprite>
+      <sprite>sprites\s_bite</sprite>
+      <sprite>sprites\s_bubble</sprite>
+      <sprite>sprites\s_camo</sprite>
+      <sprite>sprites\s_claw</sprite>
+      <sprite>sprites\s_dynomite</sprite>
+      <sprite>sprites\s_flapslap</sprite>
+      <sprite>sprites\s_heal</sprite>
+      <sprite>sprites\s_megahorn</sprite>
+      <sprite>sprites\s_pool</sprite>
+      <sprite>sprites\s_slap_choppa</sprite>
+      <sprite>sprites\s_splash</sprite>
+      <sprite>sprites\s_whirl</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Battle">
@@ -204,6 +219,7 @@
       <room>rooms\rm_chracter_select</room>
       <room>rooms\rm_next_day</room>
       <room>rooms\rm_boss</room>
+      <room>rooms\rm_get_to_work</room>
     </rooms>
   </rooms>
   <help>
