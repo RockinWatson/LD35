@@ -32,7 +32,7 @@
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="bg_ow_deer" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="-1" foreground="0" name="bg_parallax_orange" x="-400" y="400" htiled="-1" vtiled="-1" hspeed="-3" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bg_parallax_orange" x="-400" y="200" htiled="-1" vtiled="-1" hspeed="-3" vspeed="0" stretch="0"/>
     <background visible="-1" foreground="0" name="bg_parallax_blue" x="-400" y="-100" htiled="-1" vtiled="-1" hspeed="-6" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -67,6 +67,11 @@
     <instance objName="o_ow_blue_spin_spwn" x="1350" y="290" name="inst_89831186" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_orng_spin_spwn" x="1350" y="430" name="inst_79AF6952" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_orng_spin_spwn" x="1330" y="140" name="inst_463AA685" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_truck" x="520" y="220" name="inst_38EDCDA2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_truck" x="750" y="510" name="inst_683E6AB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_truck" x="340" y="650" name="inst_BC95AC4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_truck" x="1040" y="220" name="inst_14C7914C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_truck" x="1100" y="660" name="inst_DFCE9D79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

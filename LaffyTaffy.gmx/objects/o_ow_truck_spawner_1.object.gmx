@@ -26,8 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>randomize()
-spawn_time = 200;
-alarm[0] = irandom(spawn_time);
+spawn_time = irandom_range(200, 300);
+alarm[0] = spawn_time;
 </string>
           </argument>
         </arguments>

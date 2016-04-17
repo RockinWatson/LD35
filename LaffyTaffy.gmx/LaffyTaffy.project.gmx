@@ -62,6 +62,9 @@
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
+  <fonts name="fonts">
+    <font>fonts\f_Aldo</font>
+  </fonts>
   <objects name="objects">
     <objects name="Battle">
       <objects name="Player">
