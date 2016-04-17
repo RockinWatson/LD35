@@ -125,6 +125,7 @@
         <object>objects\eagle_whirl</object>
         <object>objects\ap_up</object>
         <object>objects\slap_chop</object>
+        <object>objects\deer_bite</object>
       </objects>
     </objects>
     <objects name="Controllers">
