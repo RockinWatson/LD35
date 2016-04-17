@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,14 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.enemy_health = 100;
-global.enemy_ap = 3;
+            <string>alarm [0] = 90
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="2" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -49,29 +48,7 @@ global.enemy_ap = 3;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.player_health &gt; 100{
-    global.player_health = 100;
-}
-
-if global.enemy_health &gt; 100{
-    global.enemy_health = 100;
-}
-
-if (global.ap &lt; 0){
-    global.ap = 0;
-}
-
-if (global.enemy_ap &lt; 0){
-    global.enemy_ap = 0;
-}
-
-if (global.hp_potion &lt; 0) {
-    global.hp_potion = 0;
-}
-
-if (global.ap_potion &lt; 0) {
-    global.ap_potion = 0;
-}
+            <string>instance_destroy();
 </string>
           </argument>
         </arguments>
@@ -94,23 +71,7 @@ if (global.ap_potion &lt; 0) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
-//Enemy Health
-draw_healthbar(100, 50, 300, 75, global.enemy_health, c_black, c_red, c_lime, 0, true, true)
-
-//Player Health
-draw_healthbar(850, 50, 1050, 75, global.player_health, c_black, c_red, c_lime, 0, true, true)
-
-if (global.crit == true){
-    draw_set_colour(c_white)
-    draw_text_colour(640, 200, "Critical Hit!", c_red, c_red, c_orange, c_orange, 1);
-}
-
-//Player AP
-draw_text_colour(950, 100, "AP: " + string(global.ap), c_red, c_red, c_dkgray, c_dkgray, 1);
-
-//Enemy AP
-draw_text_colour(150, 100, "Enemey AP: " + string(global.enemy_ap), c_red, c_red, c_dkgray, c_dkgray, 1);
+            <string>    draw_text_colour(950, 150, "MISS!", c_red, c_red, c_dkgray, c_dkgray, 1);
 </string>
           </argument>
         </arguments>
