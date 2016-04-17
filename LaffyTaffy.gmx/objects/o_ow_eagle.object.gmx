@@ -85,7 +85,7 @@ if place_meeting(x,y,o_ow_player_blocker_left) and go_left
 }
 
 //Player Collision
-if place_meeting(x,y,o_ow_helicopter)
+if place_meeting(x,y,o_ow_helicopter) or place_meeting(x,y,o_ow_helicopter_2) or place_meeting(x,y,o_ow_helicopter_3) or place_meeting(x,y,o_ow_helicopter_4) or place_meeting(x,y,o_ow_helicopter_5)
 {
     room_goto(S_TestRoom);
 }

@@ -4,7 +4,7 @@
   <width>1280</width>
   <height>720</height>
   <vsnap>10</vsnap>
-  <hsnap>10</hsnap>
+  <hsnap>200</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -54,11 +54,11 @@
     <instance objName="room_controller" x="-32" y="-64" name="inst_595F63A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_eagle" x="140" y="370" name="inst_D8480437" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_level_timer_count" x="30" y="750" name="inst_0CD71703" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_ow_heli_spawn_1" x="1440" y="70" name="inst_B2C719DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_ow_heli_spawn_2" x="1450" y="210" name="inst_A76C0941" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_ow_heli_spawn_3" x="1450" y="350" name="inst_A4A8454B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_ow_heli_spawn_4" x="1460" y="500" name="inst_F028E8D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_ow_heli_spawn_5" x="1440" y="630" name="inst_97C936CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_heli_spawn_1" x="1600" y="70" name="inst_B2C719DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_heli_spawn_2" x="1600" y="210" name="inst_A76C0941" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_heli_spawn_3" x="1600" y="350" name="inst_A4A8454B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_heli_spawn_4" x="1600" y="500" name="inst_F028E8D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_heli_spawn_5" x="1600" y="630" name="inst_97C936CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_enemy_destroy" x="-230" y="350" name="inst_B82E4C04" locked="0" code="" scaleX="3.48387098312378" scaleY="24.96875" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_player_blocker_down" x="470" y="640" name="inst_BBD67990" locked="0" code="" scaleX="28" scaleY="1.4375" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_player_blocker_up" x="620" y="70" name="inst_DB27DA64" locked="0" code="" scaleX="36.8709678649902" scaleY="2.51612901687622" colour="4294967295" rotation="0"/>
@@ -68,6 +68,32 @@
     <instance objName="o_ow_blue_spin_spwn" x="1340" y="270" name="inst_7E361894" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_orng_spin_spwn" x="1350" y="430" name="inst_18FC613D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_orng_spin_spwn" x="1340" y="140" name="inst_ABE29E2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_helicopter" x="1250" y="80" name="inst_A11165DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_helicopter" x="660" y="70" name="inst_C421841B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_helicopter" x="190" y="60" name="inst_8F8A8ECD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_helicopter_2" x="1010" y="220" name="inst_5EB9D6B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_helicopter_2" x="340" y="210" name="inst_A26C1239" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_helicopter_3" x="850" y="360" name="inst_DE47D846" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_helicopter_4" x="340" y="530" name="inst_91FBC5A3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_helicopter_4" x="1020" y="510" name="inst_45523926" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_helicopter_5" x="500" y="670" name="inst_6322937B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_blue_spinner" x="1180" y="580" name="inst_8E6FC501" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_blue_spinner" x="720" y="580" name="inst_21900A9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_blue_spinner" x="160" y="580" name="inst_391D6FE7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_blue_spinner" x="870" y="280" name="inst_C98B5BAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_blue_spinner" x="100" y="290" name="inst_DC59C6F7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_orange_spinner" x="1030" y="140" name="inst_85491BC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_orange_spinner" x="840" y="140" name="inst_2662389A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_orange_spinner" x="470" y="140" name="inst_FB9E0D7C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_orange_spinner" x="20" y="140" name="inst_50A071CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_orange_spinner" x="1230" y="440" name="inst_A25E3189" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_orange_spinner" x="830" y="440" name="inst_39F6981E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_orange_spinner" x="370" y="430" name="inst_5620659D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_heli_spawn_1" x="1800" y="70" name="inst_3F8D4050" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_heli_spawn_2" x="1800" y="210" name="inst_2F720A09" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_heli_spawn_3" x="1800" y="350" name="inst_4EDEBF30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_heli_spawn_4" x="1800" y="500" name="inst_E7E7E0EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_heli_spawn_5" x="1800" y="620" name="inst_6BDF6A4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

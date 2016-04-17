@@ -171,7 +171,6 @@
     <room>rooms\J_TestRoom</room>
     <room>rooms\S_TestRoom</room>
     <rooms name="OverWorld">
-      <room>rooms\rm_ow_deer</room>
       <room>rooms\rm_ow_eagle</room>
       <room>rooms\rm_ow_bass</room>
     </rooms>

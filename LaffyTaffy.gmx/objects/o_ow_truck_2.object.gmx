@@ -32,7 +32,7 @@ if place_meeting(x,y,o_ow_truck_2)
 {
     instance_destroy();   
 }
-if distance_to_object(o_ow_truck_2) &lt; 2 &amp;&amp; !place_meeting(x,y,o_ow_truck_2)
+if distance_to_object(o_ow_truck_2) &lt; 200 &amp;&amp; !place_meeting(x,y,o_ow_truck_2)
 {
     instance_destroy();
 } 

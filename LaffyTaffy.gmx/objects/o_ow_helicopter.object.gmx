@@ -31,7 +31,7 @@ if place_meeting(x,y,o_ow_helicopter)
 {
     instance_destroy();   
 }
-if distance_to_object(o_ow_helicopter) &lt; 5 &amp;&amp; !place_meeting(x,y,o_ow_helicopter)
+if distance_to_object(o_ow_helicopter) &lt; 200 &amp;&amp; !place_meeting(x,y,o_ow_helicopter)
 {
     instance_destroy();
 } 

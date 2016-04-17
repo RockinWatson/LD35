@@ -85,7 +85,7 @@ if place_meeting(x,y,o_ow_player_blocker_left) and go_left
 }
 
 //Player Collision
-if place_meeting(x,y,o_ow_truck)
+if place_meeting(x,y,o_ow_truck) or place_meeting(x,y,o_ow_truck_2) or place_meeting(x,y,o_ow_truck_3) or place_meeting(x,y,o_ow_truck_4)
 {
     room_goto(S_TestRoom);
 }

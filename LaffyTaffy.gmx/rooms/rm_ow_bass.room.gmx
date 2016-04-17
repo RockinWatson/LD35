@@ -55,7 +55,7 @@
     <instance objName="o_ow_bass" x="160" y="352" name="inst_295E2091" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_level_timer_count" x="30" y="760" name="inst_2FCCECFD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_enemy_destroy" x="-310" y="380" name="inst_3164620D" locked="0" code="" scaleX="3" scaleY="24.5625" colour="4294967295" rotation="0"/>
-    <instance objName="o_ow_hook_spwn_1" x="1450" y="60" name="inst_042B3117" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_hook_spwn_1" x="1450" y="70" name="inst_042B3117" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_hook_spwn_2" x="1450" y="220" name="inst_FD6EA679" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_hook_spwn_3" x="1450" y="360" name="inst_CE5C0CB2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_hook_spwn_4" x="1450" y="500" name="inst_9A2F5594" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -68,6 +68,27 @@
     <instance objName="o_ow_blue_spin_spwn" x="1360" y="140" name="inst_1400F338" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_orng_spin_spwn" x="1360" y="570" name="inst_ED38B706" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_orng_spin_spwn" x="1360" y="280" name="inst_060FBF9F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_hook_1" x="130" y="70" name="inst_55DA5AD0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_hook_1" x="790" y="70" name="inst_A8EA8930" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_hook_1" x="1280" y="70" name="inst_210D14CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_hook_2" x="260" y="210" name="inst_BD74840B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_hook_2" x="710" y="210" name="inst_FF66D6B1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_hook_2" x="1020" y="220" name="inst_E1924A3B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_hook_3" x="900" y="360" name="inst_10C39E95" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_hook_3" x="1310" y="370" name="inst_AB5E991B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_hook_4" x="290" y="480" name="inst_1B7F0340" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_hook_5" x="560" y="650" name="inst_1154E2D8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_blue_spinner" x="1130" y="430" name="inst_BDDA33C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_blue_spinner" x="340" y="430" name="inst_2370A84E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_blue_spinner" x="80" y="140" name="inst_99E6B0B2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_blue_spinner" x="730" y="130" name="inst_3F78FA5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_blue_spinner" x="1140" y="140" name="inst_0C345B0A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_orange_spinner" x="750" y="580" name="inst_89C9910A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_orange_spinner" x="20" y="570" name="inst_3988645C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_orange_spinner" x="1150" y="580" name="inst_CB690571" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_orange_spinner" x="1180" y="290" name="inst_668F2960" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_orange_spinner" x="670" y="280" name="inst_DDA26D6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_orange_spinner" x="310" y="290" name="inst_3A8AED18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

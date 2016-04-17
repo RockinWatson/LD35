@@ -4,7 +4,7 @@
   <width>1280</width>
   <height>720</height>
   <vsnap>10</vsnap>
-  <hsnap>10</hsnap>
+  <hsnap>200</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -56,10 +56,10 @@
     <instance objName="o_ow_player_blocker_down" x="410" y="640" name="inst_6694718F" locked="0" code="" scaleX="25.0322589874268" scaleY="1.5" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_player_blocker_up" x="390" y="220" name="inst_EB2FA30D" locked="0" code="" scaleX="24.0645160675049" scaleY="1.375" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_enemy_destroy" x="-310" y="440" name="inst_153BEC8C" locked="0" code="" scaleX="1.75" scaleY="18.9375" colour="4294967295" rotation="0"/>
-    <instance objName="o_ow_truck_spawner_1" x="1460" y="200" name="inst_7DE1FBFD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_ow_truck_spawner_2" x="1460" y="350" name="inst_EAFDAD01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_ow_truck_spawner_3" x="1470" y="490" name="inst_1F634A18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_ow_truck_spawner_4" x="1470" y="630" name="inst_31575A94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_truck_spawner_1" x="1600" y="200" name="inst_7DE1FBFD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_truck_spawner_2" x="1800" y="350" name="inst_EAFDAD01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_truck_spawner_3" x="1800" y="480" name="inst_1F634A18" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_truck_spawner_4" x="1800" y="620" name="inst_31575A94" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_level_timer_initial" x="30" y="790" name="inst_2BB39145" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_player_blocker_left" x="50" y="440" name="inst_521D1DF8" locked="0" code="" scaleX="2" scaleY="15.875" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_blocker_right" x="620" y="430" name="inst_A541BD5B" locked="0" code="" scaleX="2.125" scaleY="17.5161285400391" colour="4294967295" rotation="0"/>
@@ -72,6 +72,21 @@
     <instance objName="o_ow_truck" x="340" y="650" name="inst_BC95AC4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_truck" x="1040" y="220" name="inst_14C7914C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_truck" x="1100" y="660" name="inst_DFCE9D79" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_orange_spinner" x="1140" y="150" name="inst_2018F21B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_orange_spinner" x="770" y="140" name="inst_5D4B4FAD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_orange_spinner" x="280" y="140" name="inst_096D2BAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_orange_spinner" x="1120" y="450" name="inst_6D243672" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_orange_spinner" x="520" y="430" name="inst_2F6A6C84" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_blue_spinner" x="1250" y="590" name="inst_EED9CEF0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_blue_spinner" x="80" y="580" name="inst_01C2880A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_blue_spinner" x="760" y="580" name="inst_1C335C75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_blue_spinner" x="1230" y="280" name="inst_CFF6970F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_blue_spinner" x="760" y="290" name="inst_8639340A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_blue_spinner" x="350" y="290" name="inst_2081E68F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_truck_spawner_1" x="1800" y="200" name="inst_1AA99842" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_truck_spawner_2" x="1600" y="350" name="inst_4004A524" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_truck_spawner_3" x="1600" y="490" name="inst_39F887B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_truck_spawner_4" x="1600" y="620" name="inst_32345355" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
