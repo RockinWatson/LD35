@@ -54,8 +54,8 @@
     <instance objName="room_controller" x="96" y="96" name="inst_596D3BFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="turn_order" x="64" y="96" name="inst_91CB4E16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="health_bars" x="64" y="128" name="inst_3B46DCFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="battle_eagle" x="192" y="384" name="inst_3D833FAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="battle_helicopter" x="1088" y="384" name="inst_AA3C7834" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="battle_bass" x="192" y="384" name="inst_6ADB2D44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="battle_fisherman" x="1088" y="384" name="inst_435CF24F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
