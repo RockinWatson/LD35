@@ -92,9 +92,13 @@ if global.miss = true &amp;&amp; instance_exists (battle_bass){
 if (global.crit == true){
     draw_set_colour(c_white)
     draw_text_colour(850, 150, "CRITICAL HIT!", c_yellow, c_yellow, c_yellow, c_yellow, 1);
+    draw_text_colour(1035, 50, "-" + string(global.enemy_combat_text), c_red, c_red, c_red, c_red, 1);
 }
 
-alarm [0] = 120;
+//Player Heal
+if global.player_attack == true{
+        draw_text_colour(1035, 50, "-" + string(global.enemy_combat_text), c_red, c_red, c_red, c_red, 1);
+}
 </string>
           </argument>
         </arguments>

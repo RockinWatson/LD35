@@ -37,7 +37,8 @@ item_option = 0;
 item_menu = 0;
 global.miss = false;
 miss_chance = irandom_range (1, 100);
-//global.enemy_miss = false;
+global.player_heal = false;
+global.player_attack = false;
 </string>
           </argument>
         </arguments>
@@ -90,7 +91,9 @@ if option = 0 &amp;&amp; action_menu = 1 {
         //crit chance
         if keyboard_check_released(vk_enter){
             if (roll &gt;= 85){
-                global.enemy_health -= random_range (45, 50)
+                global.enemy_combat_text = irandom_range (45, 50);
+                global.enemy_health -= global.enemy_combat_text;
+                global.enemy_health -= irandom_range (45, 50)
                 global.crit = true;
                 instance_create(0,0,Battle_Messages);
                 global.player_turn = false;
@@ -104,7 +107,11 @@ if option = 0 &amp;&amp; action_menu = 1 {
             instance_destroy();            
         }
         
-        else global.enemy_health -= random_range(20, 30);
+        else 
+        global.enemy_combat_text = irandom_range(20, 30);
+        global.enemy_health -= global.enemy_combat_text;
+        global.player_attack = true;
+        instance_create(0,0,Battle_Messages);
         global.player_turn = false;
         instance_destroy();
          
@@ -123,7 +130,7 @@ if option = 1 &amp;&amp; action_menu = 1{
     image_xscale = 1;
     if keyboard_check_released(vk_enter) &amp;&amp; (global.ap &gt;=1){
         global.ap -= 1;
-        global.player_health += random_range (20, 30);
+        global.player_health += irandom_range (20, 30);
         global.player_turn = false;
         instance_destroy();
         with (battle_items){
@@ -143,7 +150,7 @@ if option = 2 &amp;&amp; action_menu = 1 {
         if keyboard_check_released(vk_enter) &amp;&amp; (global.ap &gt;=2){
             global.ap -= 2;
             if (roll &gt; 90){
-                global.enemy_health -= random_range (90, 100)
+                global.enemy_health -= irandom_range (90, 100)
                 global.crit = true;
                 instance_create(0,0,Battle_Messages);
                 global.player_turn = false;
@@ -155,7 +162,7 @@ if option = 2 &amp;&amp; action_menu = 1 {
                 
             }
         
-        else global.enemy_health -= random_range (60, 65);
+        else global.enemy_health -= irandom_range (60, 65);
         global.player_turn = false;
         instance_destroy();
     }
@@ -185,7 +192,7 @@ if option = 0 &amp;&amp; action_menu = 1{
     // chance
         if keyboard_check_released(vk_enter){
             if (roll &gt; 90){
-                global.enemy_health -= random_range (45, 50)
+                global.enemy_health -= irandom_range (45, 50)
                 global.crit = true;
                 global.player_turn = false;
                 instance_destroy();
@@ -198,7 +205,7 @@ if option = 0 &amp;&amp; action_menu = 1{
             instance_destroy();            
         }
         
-        else global.enemy_health -= random_range(15, 20);
+        else global.enemy_health -= irandom_range(15, 20);
         global.player_turn = false;
         instance_destroy();
          
@@ -215,7 +222,7 @@ if option = 1 &amp;&amp; action_menu = 1 {
     
     if keyboard_check_released(vk_enter) &amp;&amp; (global.ap &gt;=1){
         global.ap -= 1;
-        global.player_health += random_range (20, 30);
+        global.player_health += irandom_range (20, 30);
         global.player_turn = false;
         instance_destroy();
         with (battle_items){
@@ -232,7 +239,7 @@ if option = 2 &amp;&amp; action_menu = 1 {
         if keyboard_check_released(vk_enter) &amp;&amp; (global.ap &gt;=2){
             global.ap -= 2;
             if (roll &gt; 90){
-                global.enemy_health -= random_range (90, 100)
+                global.enemy_health -= irandom_range (90, 100)
                 global.crit = true;
                 global.player_turn = false;
                 instance_destroy();
@@ -243,7 +250,7 @@ if option = 2 &amp;&amp; action_menu = 1 {
                 
             }
         
-        else global.enemy_health -= random_range (60, 65);
+        else global.enemy_health -= irandom_range (60, 65);
         global.player_turn = false;
         instance_destroy();
     }
@@ -274,7 +281,7 @@ if option = 0 &amp;&amp; action_menu = 1{
     //crit chance
         if keyboard_check_released(vk_enter){
             if (roll &gt; 90){
-                global.enemy_health -= random_range (45, 50)
+                global.enemy_health -= irandom_range (45, 50)
                 global.crit = true;
                 global.player_turn = false;
                 instance_destroy();
@@ -287,7 +294,7 @@ if option = 0 &amp;&amp; action_menu = 1{
             instance_destroy();            
         }
         
-        else global.enemy_health -= random_range(15, 20);
+        else global.enemy_health -= irandom_range(15, 20);
         global.player_turn = false;
         instance_destroy();
          
@@ -305,7 +312,7 @@ if option = 1 &amp;&amp; action_menu = 1 {
     
     if keyboard_check_released(vk_enter) &amp;&amp; (global.ap &gt;=1){
         global.ap -= 1;
-        global.player_health += random_range (20, 30);
+        global.player_health += irandom_range (20, 30);
         global.player_turn = false;
         instance_destroy();
         with (battle_items){
@@ -322,7 +329,7 @@ if option = 2 &amp;&amp; action_menu = 1 {
         if keyboard_check_released(vk_enter) &amp;&amp; (global.ap &gt;=2){
             global.ap -= 2;
             if (roll &gt; 90){
-                global.enemy_health -= random_range (90, 100)
+                global.enemy_health -= irandom_range (90, 100)
                 global.crit = true;
                 global.player_turn = false;
                 instance_destroy();
@@ -333,7 +340,7 @@ if option = 2 &amp;&amp; action_menu = 1 {
                 
             }
         
-        else global.enemy_health -= random_range (60, 65);
+        else global.enemy_health -= irandom_range (60, 65);
         global.player_turn = false;
         instance_destroy();
     }
