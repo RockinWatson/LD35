@@ -103,10 +103,10 @@ draw_healthbar(876, 43, 1265, 115, global.enemy_health, c_black, c_red, c_lime, 
 //Player Health
 draw_healthbar(10, 43, 404, 115, global.player_health, c_black, c_red, c_lime, 0, true, true)
 
-if (global.crit == true){
+/*if (global.crit == true){
     draw_set_colour(c_white)
     draw_text_colour(750, 150, "Critical Hit!", c_red, c_red, c_orange, c_orange, 1);
-}
+}*/
 
 //Eagle Action and AP Text
 if instance_exists (eagle_attacks){

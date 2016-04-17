@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>alarm [0] = 120
+with (Battle_Messages){
+    instance_destroy();
+}  
 </string>
           </argument>
         </arguments>
@@ -71,17 +74,38 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists (battle_eagle){
-    draw_text_colour(350, 150, "HELICOPTER MISSED!", c_red, c_red, c_dkgray, c_dkgray, 1);
-    }
+            <string>//Set Font
+draw_set_font(f_Aldo_battle);
+
+if global.enemy_miss == true{
+    if instance_exists (battle_eagle){
+        draw_text_colour(275, 150, "HELLA-CHOPPA MISSED!", c_yellow, c_yellow, c_yellow, c_yellow, 1);
+        }
     
-if instance_exists (battle_deer){
-    draw_text_colour(350, 150, "TRUCK MISSED!", c_red, c_red, c_dkgray, c_dkgray, 1);
-    }
+    if instance_exists (battle_deer){
+        draw_text_colour(275, 150, "TRUCK MISSED!", c_yellow, c_yellow, c_yellow, c_yellow, 1);
+        }
     
-if instance_exists (battle_bass){
-    draw_text_colour(350, 150, "FISHERMAN MISSED!", c_red, c_red, c_dkgray, c_dkgray, 1);
-    }
+    if instance_exists (battle_bass){
+        draw_text_colour(275, 150, "FISHERMAN MISSED!", c_yellow, c_yellow, c_yellow, c_yellow, 1);
+        }
+
+}
+
+if global.enemy_heal == true{
+   if instance_exists (battle_eagle){
+        draw_text_colour(650, 150, "HELLA-CHOPPA USED HEAL!", c_yellow, c_yellow, c_yellow, c_yellow, 1);
+        }
+    
+    if instance_exists (battle_deer){
+        draw_text_colour(650, 150, "TRUCK USED HEAL!", c_yellow, c_yellow, c_yellow, c_yellow, 1);
+        }
+    
+    if instance_exists (battle_bass){
+        draw_text_colour(650, 150, "FISHERMAN USED HEAL!", c_yellow, c_yellow, c_yellow, c_yellow, 1);
+        }
+
+}
 </string>
           </argument>
         </arguments>

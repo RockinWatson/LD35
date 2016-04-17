@@ -37,7 +37,7 @@ item_option = 0;
 item_menu = 0;
 global.miss = false;
 miss_chance = irandom_range (1, 100);
-global.enemy_miss = false;
+//global.enemy_miss = false;
 </string>
           </argument>
         </arguments>
@@ -92,6 +92,7 @@ if option = 0 &amp;&amp; action_menu = 1 {
             if (roll &gt;= 85){
                 global.enemy_health -= random_range (45, 50)
                 global.crit = true;
+                instance_create(0,0,Battle_Messages);
                 global.player_turn = false;
                 instance_destroy();
             }
@@ -144,6 +145,7 @@ if option = 2 &amp;&amp; action_menu = 1 {
             if (roll &gt; 90){
                 global.enemy_health -= random_range (90, 100)
                 global.crit = true;
+                instance_create(0,0,Battle_Messages);
                 global.player_turn = false;
                 instance_destroy();
                 
@@ -180,7 +182,7 @@ if option = 0 &amp;&amp; action_menu = 1{
     y = deer_attacks.y+65
     image_xscale = 1;
     
-    //crit chance
+    // chance
         if keyboard_check_released(vk_enter){
             if (roll &gt; 90){
                 global.enemy_health -= random_range (45, 50)

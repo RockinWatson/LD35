@@ -32,9 +32,10 @@ enemy_roll = false;
 enemy_action = 0;
 battle_over = false;
 item_roll = 0;
-hp_notify = false;
-ap_notify = false;
-hp_ap_notify = false;
+global.hp_notify = false;
+global.ap_notify = false;
+global.hp_ap_notify = false;
+global.enemy_heal = false;
 </string>
           </argument>
         </arguments>
@@ -61,7 +62,8 @@ hp_ap_notify = false;
 
 //Enemy Dice Roll
 enemy_roll = true;
-
+global.enemy_miss = false;
+global.enemy_heal = false;
 if enemy_roll = true {
     enemy_action = irandom_range(1, 5);    
 }
@@ -71,12 +73,15 @@ if enemy_roll = true {
 //Helicopter Attacks
 
 if enemy_action = 4{
-    global.player_menu = false
-    instance_create (0,0,enemy_message)
+    global.player_menu = false;
+    global.enemy_miss = true;
+    instance_create (0,0,enemy_message);
 }
 else if enemy_action = 3 &amp;&amp; instance_exists (battle_helicopter) &amp;&amp; global.enemy_ap &gt;=1 &amp;&amp; global.enemy_health &lt;= 60{
     global.enemy_health += 35
-    global.player_menu = false
+    global.enemy_heal = true;
+    instance_create (0,0,enemy_message);
+    global.player_menu = false;
     global.enemy_ap -= 1;
 } else if enemy_action = 2 &amp;&amp; instance_exists (battle_helicopter) &amp;&amp; global.enemy_ap &gt;= 2{
     global.player_health -= irandom_range (30, 40);
@@ -98,6 +103,8 @@ if enemy_action = 4{
 }
 else if enemy_action = 3 &amp;&amp; instance_exists (battle_truck) &amp;&amp; global.enemy_ap &gt;=1 &amp;&amp; global.enemy_health &lt;= 60{
     global.enemy_health += 35
+    global.enemy_heal = true;
+    instance_create (0,0,enemy_message);
     global.player_menu = false
     global.enemy_ap -= 1;
 } else if enemy_action = 2 &amp;&amp; instance_exists (battle_truck) &amp;&amp; global.enemy_ap &gt;= 2{
@@ -120,6 +127,8 @@ if enemy_action = 4{
 }
 else if enemy_action = 3 &amp;&amp; instance_exists (battle_fisherman) &amp;&amp; global.enemy_ap &gt;=1 &amp;&amp; global.enemy_health &lt;= 60{
     global.enemy_health += 35
+    global.enemy_heal = true;
+    instance_create (0,0,enemy_message);
     global.player_menu = false
     global.enemy_ap -= 1;
 } else if enemy_action = 2 &amp;&amp; instance_exists (battle_fisherman) &amp;&amp; global.enemy_ap &gt;= 2{
@@ -151,15 +160,18 @@ if instance_exists (battle_fisherman){
 if global.enemy_health &lt;= 0 {
     item_roll = irandom_range (1, 3);
         if item_roll = 1{
-            hp_notify = true;
+            global.hp_notify = true;
+            instance_create(0,0,end_battle_notify);
             global.hp_potion +=1;
         }
         if item_roll = 2{
-            ap_notify = true;
+            global.ap_notify = true;
+            instance_create(0,0,end_battle_notify);
             global.ap_potion +=1;
         }
         if item_roll = 3{
-            hp_ap_notify = true;
+            global.hp_ap_notify = true;
+            instance_create(0,0,end_battle_notify);
             global.hp_potion +=1;
             global.ap_potion +=1;
         }
@@ -214,38 +226,6 @@ if global.player_turn == false {
             instance_destroy();
         }
   alarm[0] = 120;
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if hp_notify = true{
-    draw_sprite(s_hp_pickup, 0, 640, 300);
-}
-if ap_notify = true{
-    draw_sprite(s_ap_pickup, 0, 640, 300);
-}
-if hp_ap_notify = true{
-    draw_sprite(s_hp_pickup, 0, 640, 300);
-    draw_sprite(s_ap_pickup, 0, 640, 375);
 }
 </string>
           </argument>
