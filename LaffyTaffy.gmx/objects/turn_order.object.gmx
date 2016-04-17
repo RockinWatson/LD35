@@ -36,6 +36,8 @@ global.hp_notify = false;
 global.ap_notify = false;
 global.hp_ap_notify = false;
 global.enemy_heal = false;
+global.enemy_combat_text = 0;
+global.player_combat_text = 0;
 </string>
           </argument>
         </arguments>
@@ -64,6 +66,7 @@ global.enemy_heal = false;
 enemy_roll = true;
 global.enemy_miss = false;
 global.enemy_heal = false;
+global.enemy_attack = false;
 if enemy_roll = true {
     enemy_action = irandom_range(1, 5);    
 }
@@ -72,75 +75,87 @@ if enemy_roll = true {
 
 //Helicopter Attacks
 
-if enemy_action = 4{
-    global.player_menu = false;
-    global.enemy_miss = true;
-    instance_create (0,0,enemy_message);
-}
-else if enemy_action = 3 &amp;&amp; instance_exists (battle_helicopter) &amp;&amp; global.enemy_ap &gt;=1 &amp;&amp; global.enemy_health &lt;= 60{
-    global.enemy_health += 35
+if enemy_action == 3 &amp;&amp; instance_exists (battle_helicopter) &amp;&amp; global.enemy_ap &gt;=1 &amp;&amp; global.enemy_health &lt;= 60{
+    global.enemy_combat_text = irandom_range (32, 37)
+    global.enemy_health += global.enemy_combat_text;    
     global.enemy_heal = true;
     instance_create (0,0,enemy_message);
     global.player_menu = false;
     global.enemy_ap -= 1;
-} else if enemy_action = 2 &amp;&amp; instance_exists (battle_helicopter) &amp;&amp; global.enemy_ap &gt;= 2{
-    global.player_health -= irandom_range (30, 40);
+} else if instance_exists (battle_helicopter) &amp;&amp; global.enemy_ap &gt;=1 &amp;&amp; global.enemy_health &lt;= 35{
+    global.enemy_combat_text = irandom_range (32, 37)
+    global.enemy_health += global.enemy_combat_text; 
+    global.enemy_heal = true;
+    instance_create (0,0,enemy_message);
+    global.player_menu = false;
+    global.enemy_ap -= 1;
+}else if enemy_action == 4{
+    global.player_menu = false;
+    global.enemy_miss = true;
+    instance_create (0,0,enemy_message);
+} else if instance_exists (battle_helicopter){
+    global.player_combat_text = irandom_range (20,30);
+    global.player_health -= global.player_combat_text;
+    global.enemy_attack = true;
+    instance_create (0,0,enemy_message);
     global.player_menu = false
-    global.enemy_ap -= 2;
-} else if enemy_action = 1 &amp;&amp; instance_exists (battle_helicopter){
-    global.player_health -= random_range (10, 18);
-    global.player_menu = false;
-} else if instance_exists (battle_helicopter){     
-    global.player_health -= random_range (10, 18);
-    global.player_menu = false;
 }
 
 //Truck Attacks
 
-if enemy_action = 4{
-    global.player_menu = false
-    instance_create (0,0,enemy_message)
-}
-else if enemy_action = 3 &amp;&amp; instance_exists (battle_truck) &amp;&amp; global.enemy_ap &gt;=1 &amp;&amp; global.enemy_health &lt;= 60{
-    global.enemy_health += 35
+if enemy_action == 3 &amp;&amp; instance_exists (battle_truck) &amp;&amp; global.enemy_ap &gt;=1 &amp;&amp; global.enemy_health &lt;= 60{
+    global.enemy_combat_text = irandom_range (32, 37)
+    global.enemy_health += global.enemy_combat_text;    
     global.enemy_heal = true;
     instance_create (0,0,enemy_message);
-    global.player_menu = false
+    global.player_menu = false;
     global.enemy_ap -= 1;
-} else if enemy_action = 2 &amp;&amp; instance_exists (battle_truck) &amp;&amp; global.enemy_ap &gt;= 2{
-    global.player_health -= irandom_range (30, 40);
+} else if instance_exists (battle_truck) &amp;&amp; global.enemy_ap &gt;=1 &amp;&amp; global.enemy_health &lt;= 35{
+    global.enemy_combat_text = irandom_range (32, 37)
+    global.enemy_health += global.enemy_combat_text;    
+    global.enemy_heal = true;
+    instance_create (0,0,enemy_message);
+    global.player_menu = false;
+    global.enemy_ap -= 1;
+} else if enemy_action == 4{
+    global.player_menu = false;
+    global.enemy_miss = true;
+    instance_create (0,0,enemy_message);
+} else if instance_exists (battle_truck){
+    global.player_combat_text = irandom_range (20,30);
+    global.player_health -= global.player_combat_text;
+    global.enemy_attack = true;
+    instance_create (0,0,enemy_message);
     global.player_menu = false
-    global.enemy_ap -= 2;
-} else if enemy_action = 1 &amp;&amp; instance_exists (battle_truck){
-    global.player_health -= random_range (10, 18);
-    global.player_menu = false;
-} else if instance_exists (battle_truck){     
-    global.player_health -= random_range (10, 18);
-    global.player_menu = false;
 }
 
 //Fisherman Attacks
 
-if enemy_action = 4{
-    global.player_menu = false
-    instance_create (0,0,enemy_message)
-}
-else if enemy_action = 3 &amp;&amp; instance_exists (battle_fisherman) &amp;&amp; global.enemy_ap &gt;=1 &amp;&amp; global.enemy_health &lt;= 60{
-    global.enemy_health += 35
+
+if enemy_action == 3 &amp;&amp; instance_exists (battle_fisherman) &amp;&amp; global.enemy_ap &gt;=1 &amp;&amp; global.enemy_health &lt;= 60{
+    global.enemy_combat_text = irandom_range (32, 37)
+    global.enemy_health += global.enemy_combat_text;    
     global.enemy_heal = true;
     instance_create (0,0,enemy_message);
-    global.player_menu = false
+    global.player_menu = false;
     global.enemy_ap -= 1;
-} else if enemy_action = 2 &amp;&amp; instance_exists (battle_fisherman) &amp;&amp; global.enemy_ap &gt;= 2{
-    global.player_health -= irandom_range (30, 40);
+} else if instance_exists (battle_fisherman) &amp;&amp; global.enemy_ap &gt;=1 &amp;&amp; global.enemy_health &lt;= 35{
+    global.enemy_combat_text = irandom_range (32, 37)
+    global.enemy_health += global.enemy_combat_text;    
+    global.enemy_heal = true;
+    instance_create (0,0,enemy_message);
+    global.player_menu = false;
+    global.enemy_ap -= 1;
+} else if enemy_action == 4{
+    global.player_menu = false;
+    global.enemy_miss = true;
+    instance_create (0,0,enemy_message);
+} else if instance_exists (battle_fisherman){
+    global.player_combat_text = irandom_range (20,30);
+    global.player_health -= global.player_combat_text;
+    global.enemy_attack = true;
+    instance_create (0,0,enemy_message);    
     global.player_menu = false
-    global.enemy_ap -= 2;
-} else if enemy_action = 1 &amp;&amp; instance_exists (battle_fisherman){
-    global.player_health -= random_range (10, 18);
-    global.player_menu = false;
-} else if instance_exists (battle_fisherman){     
-    global.player_health -= random_range (10, 18);
-    global.player_menu = false;
 }
 
 
