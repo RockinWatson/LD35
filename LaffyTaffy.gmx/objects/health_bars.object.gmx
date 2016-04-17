@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-5</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>global.enemy_health = 100;
-global.enemy_ap = 3;
+global.enemy_ap = irandom_range (1,3);
 </string>
           </argument>
         </arguments>
@@ -94,23 +94,53 @@ if (global.ap_potion &lt; 0) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>//Set Font
+draw_set_font(f_Aldo)
+
 //Enemy Health
-draw_healthbar(950, 50, 1150, 75, global.enemy_health, c_black, c_red, c_lime, 0, true, true)
+draw_healthbar(876, 43, 1265, 115, global.enemy_health, c_black, c_red, c_lime, 1, true, true)
 
 //Player Health
-draw_healthbar(100, 50, 300, 75, global.player_health, c_black, c_red, c_lime, 0, true, true)
+draw_healthbar(10, 43, 404, 115, global.player_health, c_black, c_red, c_lime, 0, true, true)
 
 if (global.crit == true){
     draw_set_colour(c_white)
     draw_text_colour(750, 150, "Critical Hit!", c_red, c_red, c_orange, c_orange, 1);
 }
 
-//Player AP
-draw_text_colour(150, 100, "Player AP: " + string(global.ap), c_red, c_red, c_dkgray, c_dkgray, 1);
+//Eagle Action and AP Text
+if instance_exists (eagle_attacks){
+    draw_text_colour(eagle_attacks.x + 25, eagle_attacks.y+40 , "Claw", c_red, c_red, c_dkgray, c_dkgray, 1);
+    draw_text_colour(eagle_attacks.x + 25, eagle_attacks.y+80 , "CaCaw!", c_red, c_red, c_dkgray, c_dkgray, 1);
+    draw_text_colour(eagle_attacks.x + 25, eagle_attacks.y+120 , "Whirlwind", c_red, c_red, c_dkgray, c_dkgray, 1);
+    draw_text_colour(eagle_attacks.x + 202, eagle_attacks.y+1, string(global.ap), c_red, c_red, c_dkgray, c_dkgray, 1);
+}
+
+//Items Text
+if instance_exists (battle_items){
+    draw_text_colour(battle_items.x + 6, battle_items.y-3 , "HP Potion", c_red, c_red, c_dkgray, c_dkgray, 1);
+    draw_text_colour(battle_items.x + 13, battle_items.y+35 , "AP Potion", c_red, c_red, c_dkgray, c_dkgray, 1);
+}
+
+//Deer Action and AP Text
+if instance_exists (deer_attacks){
+    draw_text_colour(deer_attacks.x + 25, deer_attacks.y+40 , "Claw", c_red, c_red, c_dkgray, c_dkgray, 1);
+    draw_text_colour(deer_attacks.x + 25, deer_attacks.y+80 , "CaCaw!", c_red, c_red, c_dkgray, c_dkgray, 1);
+    draw_text_colour(deer_attacks.x + 25, deer_attacks.y+120 , "Whirlwind", c_red, c_red, c_dkgray, c_dkgray, 1);
+    draw_text_colour(deer_attacks.x + 202, deer_attacks.y+1, string(global.ap), c_red, c_red, c_dkgray, c_dkgray, 1);
+}
+
+//Bass Action and AP Text
+if instance_exists (bass_attacks){
+    draw_text_colour(bass_attacks.x + 25, bass_attacks.y+40, "Claw", c_red, c_red, c_dkgray, c_dkgray, 1);
+    draw_text_colour(bass_attacks.x + 25, bass_attacks.y+80, "CaCaw!", c_red, c_red, c_dkgray, c_dkgray, 1);
+    draw_text_colour(bass_attacks.x + 25, bass_attacks.y+120, "Whirlwind", c_red, c_red, c_dkgray, c_dkgray, 1);
+    draw_text_colour(bass_attacks.x + 202, bass_attacks.y+1, string(global.ap), c_red, c_red, c_dkgray, c_dkgray, 1);
+}
+
 
 //Enemy AP
-draw_text_colour(1000, 100, "Enemey AP: " + string(global.enemy_ap), c_red, c_red, c_dkgray, c_dkgray, 1);
+//draw_text_colour(1000, 100, "Enemey AP: " + string(global.enemy_ap), c_red, c_red, c_dkgray, c_dkgray, 1);
 </string>
           </argument>
         </arguments>

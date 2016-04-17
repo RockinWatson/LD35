@@ -157,7 +157,7 @@ if option = 3 &amp;&amp; action_menu = 1 {
     x = eagle_attacks.x+125
     y = eagle_attacks.y+105
         if keyboard_check_released(vk_enter) || keyboard_check_pressed (vk_right){
-            instance_create(eagle_attacks.x+138, eagle_attacks.y+61, battle_items)
+            instance_create(eagle_attacks.x+115, eagle_attacks.y+170, battle_items)
             action_menu = 0;
             item_menu = 1;
         }
@@ -242,7 +242,7 @@ if option = 3 &amp;&amp; action_menu = 1 {
     x = deer_attacks.x+125
     y = deer_attacks.y+105
         if keyboard_check_released(vk_enter) || keyboard_check_pressed (vk_right){
-            instance_create(deer_attacks.x+138, deer_attacks.y+61, battle_items)
+            instance_create(deer_attacks.x+115, deer_attacks.y+170, battle_items)
             action_menu = 0;
             item_menu = 1;
         }
@@ -327,7 +327,7 @@ if option = 3 &amp;&amp; action_menu = 1 {
     x = bass_attacks.x+125
     y = bass_attacks.y+105
         if keyboard_check_released(vk_enter) || keyboard_check_pressed (vk_right){
-            instance_create(bass_attacks.x+138, bass_attacks.y+61, battle_items)
+            instance_create(bass_attacks.x+115, bass_attacks.y+170, battle_items)
             action_menu = 0;
             item_menu = 1;
         }

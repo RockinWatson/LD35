@@ -84,6 +84,7 @@
         <object>objects\variable_init</object>
         <object>objects\Battle_Messages</object>
         <object>objects\enemy_message</object>
+        <object>objects\top_bar</object>
       </objects>
       <objects name="Attacks">
         <object>objects\eagle_attacks</object>

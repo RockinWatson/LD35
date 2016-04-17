@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(eagle_attacks.x+125, eagle_attacks.y+20, selection_arrow);
+            <string>instance_create(eagle_attacks.x, eagle_attacks.y+50, selection_arrow);
 </string>
           </argument>
         </arguments>
