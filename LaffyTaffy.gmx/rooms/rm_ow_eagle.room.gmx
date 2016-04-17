@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1280</width>
   <height>720</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>10</vsnap>
+  <hsnap>10</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -32,8 +32,8 @@
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="bg_ow_eagle" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
-    <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bg_parallax_orange" x="-400" y="400" htiled="-1" vtiled="-1" hspeed="-3" vspeed="0" stretch="0"/>
+    <background visible="-1" foreground="0" name="bg_parallax_blue" x="-400" y="-100" htiled="-1" vtiled="-1" hspeed="-6" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -52,6 +52,22 @@
   </views>
   <instances>
     <instance objName="room_controller" x="-32" y="-64" name="inst_595F63A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_eagle" x="140" y="370" name="inst_D8480437" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_level_timer_count" x="30" y="750" name="inst_0CD71703" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_heli_spawn_1" x="1440" y="70" name="inst_B2C719DD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_heli_spawn_2" x="1450" y="210" name="inst_A76C0941" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_heli_spawn_3" x="1450" y="350" name="inst_A4A8454B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_heli_spawn_4" x="1460" y="500" name="inst_F028E8D6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_heli_spawn_5" x="1440" y="630" name="inst_97C936CC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_enemy_destroy" x="-230" y="350" name="inst_B82E4C04" locked="0" code="" scaleX="3.48387098312378" scaleY="24.96875" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_player_blocker_down" x="470" y="640" name="inst_BBD67990" locked="0" code="" scaleX="28" scaleY="1.4375" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_player_blocker_up" x="620" y="70" name="inst_DB27DA64" locked="0" code="" scaleX="36.8709678649902" scaleY="2.51612901687622" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_player_blocker_left" x="120" y="360" name="inst_78DD8E35" locked="0" code="" scaleX="2.03225803375244" scaleY="22.7800006866455" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_blocker_right" x="630" y="330" name="inst_30F71EAC" locked="0" code="" scaleX="1.75" scaleY="24.5599994659424" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_blue_spin_spwn" x="1340" y="570" name="inst_F2F83B16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_blue_spin_spwn" x="1340" y="270" name="inst_7E361894" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_orng_spin_spwn" x="1350" y="430" name="inst_18FC613D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_orng_spin_spwn" x="1340" y="140" name="inst_ABE29E2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

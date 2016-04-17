@@ -45,6 +45,8 @@
     <sprites name="OverWorld">
       <sprite>sprites\s_player_blocker</sprite>
       <sprite>sprites\s_enemy_destroy</sprite>
+      <sprite>sprites\s_ow_blue_spinner</sprite>
+      <sprite>sprites\s_ow_orange_spinner</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -55,6 +57,8 @@
       <background>background\bg_ow_deer</background>
       <background>background\bg_ow_eagle</background>
       <background>background\bg_ow_bass</background>
+      <background>background\bg_parallax_blue</background>
+      <background>background\bg_parallax_orange</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
@@ -109,11 +113,12 @@
           <object>objects\o_ow_helicopter_4</object>
           <object>objects\o_ow_helicopter_5</object>
         </objects>
-        <objects name="Fishermen">
-          <object>objects\o_ow_fisherman</object>
-          <object>objects\o_ow_fisherman_2</object>
-          <object>objects\o_ow_fisherman_3</object>
-          <object>objects\o_ow_fisherman_4</object>
+        <objects name="Hooks">
+          <object>objects\o_ow_hook_1</object>
+          <object>objects\o_ow_hook_2</object>
+          <object>objects\o_ow_hook_3</object>
+          <object>objects\o_ow_hook_4</object>
+          <object>objects\o_ow_hook_5</object>
         </objects>
       </objects>
       <objects name="Controllers">
@@ -132,11 +137,16 @@
           <object>objects\o_ow_heli_spawn_4</object>
           <object>objects\o_ow_heli_spawn_5</object>
         </objects>
-        <objects name="Fishermen">
-          <object>objects\o_ow_fisherman_spwn__1</object>
-          <object>objects\o_ow_fisherman_spwn__2</object>
-          <object>objects\o_ow_fisherman_spwn__3</object>
-          <object>objects\o_ow_fisherman_spwn__4</object>
+        <objects name="Hooks">
+          <object>objects\o_ow_hook_spwn_1</object>
+          <object>objects\o_ow_hook_spwn_2</object>
+          <object>objects\o_ow_hook_spwn_3</object>
+          <object>objects\o_ow_hook_spwn_4</object>
+          <object>objects\o_ow_hook_spwn_5</object>
+        </objects>
+        <objects name="Spinners">
+          <object>objects\o_ow_blue_spin_spwn</object>
+          <object>objects\o_ow_orng_spin_spwn</object>
         </objects>
       </objects>
       <objects name="Environment">
@@ -145,6 +155,8 @@
         <object>objects\o_ow_enemy_destroy</object>
         <object>objects\o_ow_player_blocker_left</object>
         <object>objects\o_ow_blocker_right</object>
+        <object>objects\o_ow_blue_spinner</object>
+        <object>objects\o_ow_orange_spinner</object>
       </objects>
     </objects>
   </objects>
