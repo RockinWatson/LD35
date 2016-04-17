@@ -175,10 +175,19 @@
   <rooms name="rooms">
     <room>rooms\J_TestRoom</room>
     <room>rooms\S_TestRoom</room>
-    <rooms name="OverWorld">
-      <room>rooms\rm_ow_eagle</room>
-      <room>rooms\rm_ow_bass</room>
+    <rooms name="Story Lines">
       <room>rooms\rm_ow_bttle_test</room>
+      <rooms name="Eagle Story Line">
+        <room>rooms\rm_eagle_morph</room>
+        <room>rooms\rm_ow_eagle</room>
+      </rooms>
+      <rooms name="Bass Story Line">
+        <room>rooms\rm_bass_morph</room>
+        <room>rooms\rm_ow_bass</room>
+      </rooms>
+      <rooms name="Deer Story Line">
+        <room>rooms\rm_deer_morph</room>
+      </rooms>
     </rooms>
     <rooms name="Battle">
       <room>rooms\variable_init_room</room>
@@ -186,6 +195,15 @@
       <room>rooms\eagle_battle</room>
       <room>rooms\deer_battle</room>
       <room>rooms\bass_battle</room>
+    </rooms>
+    <rooms name="Scenes">
+      <room>rooms\rm_title_screen</room>
+      <room>rooms\rm_bedroom_1</room>
+      <room>rooms\rm_alarmclock</room>
+      <room>rooms\rm_bedroom_2</room>
+      <room>rooms\rm_chracter_select</room>
+      <room>rooms\rm_next_day</room>
+      <room>rooms\rm_boss</room>
     </rooms>
   </rooms>
   <help>

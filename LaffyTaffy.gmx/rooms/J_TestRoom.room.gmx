@@ -87,6 +87,8 @@
     <instance objName="o_ow_truck_spawner_2" x="1600" y="350" name="inst_4004A524" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_truck_spawner_3" x="1600" y="490" name="inst_39F887B6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_truck_spawner_4" x="1600" y="620" name="inst_32345355" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_truck_3" x="1600" y="500" name="inst_5ED937E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_truck_2" x="1600" y="210" name="inst_05532BC8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
