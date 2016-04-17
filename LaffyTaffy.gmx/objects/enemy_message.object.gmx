@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-10</depth>
+  <depth>-20</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm [0] = 90
+            <string>alarm [0] = 120
 </string>
           </argument>
         </arguments>
@@ -72,15 +72,15 @@
           <argument>
             <kind>1</kind>
             <string>if instance_exists (battle_eagle){
-    draw_text_colour(battle_eagle.x+150, battle_eagle.y-200, "MISS!", c_red, c_red, c_dkgray, c_dkgray, 1);
+    draw_text_colour(350, 150, "HELICOPTER MISSED!", c_red, c_red, c_dkgray, c_dkgray, 1);
     }
     
 if instance_exists (battle_deer){
-    draw_text_colour(battle_deer.x+150, battle_deer.y-200, "MISS!", c_red, c_red, c_dkgray, c_dkgray, 1);
+    draw_text_colour(350, 150, "TRUCK MISSED!", c_red, c_red, c_dkgray, c_dkgray, 1);
     }
     
 if instance_exists (battle_bass){
-    draw_text_colour(battle_bass.x+150, battle_bass.y-200, "MISS!", c_red, c_red, c_dkgray, c_dkgray, 1);
+    draw_text_colour(350, 150, "FISHERMAN MISSED!", c_red, c_red, c_dkgray, c_dkgray, 1);
     }
 </string>
           </argument>

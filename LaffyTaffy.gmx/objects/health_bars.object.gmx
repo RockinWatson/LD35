@@ -124,17 +124,17 @@ if instance_exists (battle_items){
 
 //Deer Action and AP Text
 if instance_exists (deer_attacks){
-    draw_text_colour(deer_attacks.x + 25, deer_attacks.y+40 , "Claw", c_red, c_red, c_dkgray, c_dkgray, 1);
-    draw_text_colour(deer_attacks.x + 25, deer_attacks.y+80 , "CaCaw!", c_red, c_red, c_dkgray, c_dkgray, 1);
-    draw_text_colour(deer_attacks.x + 25, deer_attacks.y+120 , "Whirlwind", c_red, c_red, c_dkgray, c_dkgray, 1);
+    draw_text_colour(deer_attacks.x + 25, deer_attacks.y+40 , "Bite", c_red, c_red, c_dkgray, c_dkgray, 1);
+    draw_text_colour(deer_attacks.x + 25, deer_attacks.y+80 , "Kick", c_red, c_red, c_dkgray, c_dkgray, 1);
+    draw_text_colour(deer_attacks.x + 25, deer_attacks.y+120 , "Trample", c_red, c_red, c_dkgray, c_dkgray, 1);
     draw_text_colour(deer_attacks.x + 202, deer_attacks.y-2, string(global.ap), c_red, c_red, c_dkgray, c_dkgray, 1);
 }
 
 //Bass Action and AP Text
 if instance_exists (bass_attacks){
-    draw_text_colour(bass_attacks.x + 25, bass_attacks.y+40, "Claw", c_red, c_red, c_dkgray, c_dkgray, 1);
-    draw_text_colour(bass_attacks.x + 25, bass_attacks.y+80, "CaCaw!", c_red, c_red, c_dkgray, c_dkgray, 1);
-    draw_text_colour(bass_attacks.x + 25, bass_attacks.y+120, "Whirlwind", c_red, c_red, c_dkgray, c_dkgray, 1);
+    draw_text_colour(bass_attacks.x + 25, bass_attacks.y+40, "Splash", c_red, c_red, c_dkgray, c_dkgray, 1);
+    draw_text_colour(bass_attacks.x + 25, bass_attacks.y+80, "Bubble", c_red, c_red, c_dkgray, c_dkgray, 1);
+    draw_text_colour(bass_attacks.x + 25, bass_attacks.y+120, "Whirlpool", c_red, c_red, c_dkgray, c_dkgray, 1);
     draw_text_colour(bass_attacks.x + 202, bass_attacks.y-2, string(global.ap), c_red, c_red, c_dkgray, c_dkgray, 1);
 }
 

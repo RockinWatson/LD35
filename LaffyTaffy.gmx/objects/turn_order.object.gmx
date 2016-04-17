@@ -187,7 +187,6 @@ if global.enemy_health &lt;= 0 {
           <argument>
             <kind>1</kind>
             <string>//Create Attack Menus//
-
 //Eagle Attack Menu
 if global.player_menu = false  &amp;&amp; instance_exists(battle_eagle) {
     instance_create(450, 460, eagle_attacks);
@@ -206,6 +205,7 @@ if global.player_menu = false  &amp;&amp; instance_exists(battle_bass) {
     global.player_menu = true;
 }
 
+
 //Enemy Attack Phase//
 if global.player_turn == false {
     global.enemy_turn = true;
@@ -213,7 +213,7 @@ if global.player_turn == false {
         with (eagle_attacks){
             instance_destroy();
         }
-  alarm[0] = 90;
+  alarm[0] = 120;
 }
 </string>
           </argument>
