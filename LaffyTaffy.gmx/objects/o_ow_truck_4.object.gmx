@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>//Truck Speed
-x -= 5;
+speed = -5;
 
 if place_meeting(x,y,o_ow_truck_4)
 {

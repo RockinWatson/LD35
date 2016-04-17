@@ -32,6 +32,30 @@ side_distance = 140;
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_goto(deer_battle);
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -87,7 +111,20 @@ if place_meeting(x,y,o_ow_player_blocker_left) and go_left
 //Player Collision
 if place_meeting(x,y,o_ow_truck) or place_meeting(x,y,o_ow_truck_2) or place_meeting(x,y,o_ow_truck_3) or place_meeting(x,y,o_ow_truck_4)
 {
-    room_goto(S_TestRoom);
+    //Disaable spawners
+    instance_deactivate_object(o_ow_truck_spawner_1);
+    instance_deactivate_object(o_ow_truck_spawner_2);
+    instance_deactivate_object(o_ow_truck_spawner_3);
+    instance_deactivate_object(o_ow_truck_spawner_4);
+    
+    //Disable movement
+    go_right = 10;
+    go_left = 10;
+    go_up = 10;
+    go_down = 10; 
+    
+    //Goto Battle Scene
+    alarm[0] = 15;
 }
 </string>
           </argument>

@@ -25,9 +25,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Truck Speed
-x -= 5;
+            <string>speed = -5;
 
+//Deer Collision
+if place_meeting(x,y,o_ow_deer)
+{
+    speed = 0;
+    image_alpha = .5;
+}
+
+//Self area check
 if place_meeting(x,y,o_ow_truck)
 {
     instance_destroy();   
