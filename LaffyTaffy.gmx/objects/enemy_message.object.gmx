@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm [0] = 120;
+            <string>with (Battle_Messages){
+    instance_destroy();
+}
+alarm [0] = 120;
 </string>
           </argument>
         </arguments>

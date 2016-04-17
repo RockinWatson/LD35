@@ -77,15 +77,15 @@
 draw_set_font(f_Aldo_battle)
 
 //Player Miss Text
-if global.miss = true &amp;&amp; instance_exists (battle_eagle){
+if global.miss == true &amp;&amp; instance_exists (battle_eagle){
     draw_text_colour(650, 150, "PHOENIX-EAGLE MISSED!", c_yellow, c_yellow, c_yellow, c_yellow, 1);
 }
 
-if global.miss = true &amp;&amp; instance_exists (battle_deer){
+if global.miss == true &amp;&amp; instance_exists (battle_deer){
     draw_text_colour(750, 150, "DEER MISSED!", c_yellow, c_yellow, c_yellow, c_yellow, 1);
 }
 
-if global.miss = true &amp;&amp; instance_exists (battle_bass){
+if global.miss == true &amp;&amp; instance_exists (battle_bass){
     draw_text_colour(650, 150, "BIG MOUTH BASS MISSED!", c_yellow, c_yellow, c_yellow, c_yellow, 1);
 }
 
@@ -95,9 +95,23 @@ if (global.crit == true){
     draw_text_colour(1035, 50, "-" + string(global.enemy_combat_text), c_red, c_red, c_red, c_red, 1);
 }
 
-//Player Heal
+//Player Attack
 if global.player_attack == true{
         draw_text_colour(1035, 50, "-" + string(global.enemy_combat_text), c_red, c_red, c_red, c_red, 1);
+}
+
+//Player Heal
+if global.player_heal == true{
+        draw_text_colour(185, 50, "+" + string(global.player_combat_text), c_blue, c_blue, c_blue, c_blue, 1);
+}
+
+//AP Potion
+if global.use_ap_potion == true {
+        draw_text_colour(185, 50, "+" + string(global.player_combat_text) + "AP", c_blue, c_blue, c_blue, c_blue, 1);
+}
+
+if global.use_hp_potion == true {
+        draw_text_colour(185, 50, "+" + string(global.player_combat_text), c_blue, c_blue, c_blue, c_blue, 1);
 }
 </string>
           </argument>

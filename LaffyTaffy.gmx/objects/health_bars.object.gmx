@@ -105,7 +105,7 @@ draw_healthbar(10, 43, 404, 115, global.player_health, c_black, c_red, c_lime, 0
 
 /*if (global.crit == true){
     draw_set_colour(c_white)
-    draw_text_colour(750, 150, "Critical Hit!", c_red, c_red, c_orange, c_orange, 1);
+    draw_text_colour(750, 150, "Critical Hit!", c_yellow, c_yellow, c_orange, c_orange, 1);
 }*/
 
 //Eagle Action and AP Text
@@ -118,29 +118,29 @@ if instance_exists (eagle_attacks){
 
 //Items Text
 if instance_exists (battle_items){
-    draw_text_colour(battle_items.x + 6, battle_items.y-3 , "HP Potion", c_red, c_red, c_dkgray, c_dkgray, 1);
-    draw_text_colour(battle_items.x + 13, battle_items.y+35 , "AP Potion", c_red, c_red, c_dkgray, c_dkgray, 1);
+    draw_text_colour(battle_items.x + 6, battle_items.y-3 , "HP Potion", c_yellow, c_yellow, c_yellow, c_yellow, 1);
+    draw_text_colour(battle_items.x + 13, battle_items.y+35 , "AP Potion", c_yellow, c_yellow, c_yellow, c_yellow, 1);
 }
 
 //Deer Action and AP Text
 if instance_exists (deer_attacks){
-    draw_text_colour(deer_attacks.x + 25, deer_attacks.y+40 , "Bite", c_red, c_red, c_dkgray, c_dkgray, 1);
-    draw_text_colour(deer_attacks.x + 25, deer_attacks.y+80 , "Kick", c_red, c_red, c_dkgray, c_dkgray, 1);
-    draw_text_colour(deer_attacks.x + 25, deer_attacks.y+120 , "Trample", c_red, c_red, c_dkgray, c_dkgray, 1);
-    draw_text_colour(deer_attacks.x + 202, deer_attacks.y-2, string(global.ap), c_red, c_red, c_dkgray, c_dkgray, 1);
+    draw_text_colour(deer_attacks.x + 25, deer_attacks.y+40 , "Bite", c_yellow, c_yellow, c_yellow, c_yellow, 1);
+    draw_text_colour(deer_attacks.x + 25, deer_attacks.y+80 , "Camo", c_yellow, c_yellow, c_yellow, c_yellow, 1);
+    draw_text_colour(deer_attacks.x + 25, deer_attacks.y+120 , "Megahorn", c_yellow, c_yellow, c_yellow, c_yellow, 1);
+    draw_text_colour(deer_attacks.x + 202, deer_attacks.y-2, string(global.ap), c_yellow, c_yellow, c_yellow, c_yellow, 1);
 }
 
 //Bass Action and AP Text
 if instance_exists (bass_attacks){
-    draw_text_colour(bass_attacks.x + 25, bass_attacks.y+40, "Splash", c_red, c_red, c_dkgray, c_dkgray, 1);
-    draw_text_colour(bass_attacks.x + 25, bass_attacks.y+80, "Bubble", c_red, c_red, c_dkgray, c_dkgray, 1);
-    draw_text_colour(bass_attacks.x + 25, bass_attacks.y+120, "Whirlpool", c_red, c_red, c_dkgray, c_dkgray, 1);
-    draw_text_colour(bass_attacks.x + 202, bass_attacks.y-2, string(global.ap), c_red, c_red, c_dkgray, c_dkgray, 1);
+    draw_text_colour(bass_attacks.x + 25, bass_attacks.y+40, "Splash", c_yellow, c_yellow, c_yellow, c_yellow, 1);
+    draw_text_colour(bass_attacks.x + 25, bass_attacks.y+80, "Bubble", c_yellow, c_yellow, c_yellow, c_yellow, 1);
+    draw_text_colour(bass_attacks.x + 25, bass_attacks.y+120, "Whirlpool", c_yellow, c_yellow, c_yellow, c_yellow, 1);
+    draw_text_colour(bass_attacks.x + 202, bass_attacks.y-2, string(global.ap), c_yellow, c_yellow, c_yellow, c_yellow, 1);
 }
 
 
 //Enemy AP
-//draw_text_colour(1000, 100, "Enemey AP: " + string(global.enemy_ap), c_red, c_red, c_dkgray, c_dkgray, 1);
+//draw_text_colour(1000, 100, "Enemey AP: " + string(global.enemy_ap), c_yellow, c_yellow, c_yellow, c_yellow, 1);
 </string>
           </argument>
         </arguments>

@@ -105,7 +105,7 @@
         <object>objects\draw_counts</object>
         <object>objects\end_battle_notify</object>
       </objects>
-      <objects name="Attacks">
+      <objects name="Battle Menus">
         <object>objects\eagle_attacks</object>
         <object>objects\deer_attacks</object>
         <object>objects\bass_attacks</object>
@@ -115,6 +115,13 @@
       <objects name="Pickup Notifications">
         <object>objects\hp_pickup</object>
         <object>objects\ap_pickup</object>
+      </objects>
+      <objects name="Attacks">
+        <object>objects\eagle_claw</object>
+        <object>objects\obj_heal</object>
+        <object>objects\eagle_whirl</object>
+        <object>objects\ap_up</object>
+        <object>objects\slap_chop</object>
       </objects>
     </objects>
     <objects name="Controllers">
