@@ -78,7 +78,9 @@ if keyboard_check_pressed(vk_up) &amp;&amp; action_menu = 1{
 }
 
 
-//Attacks
+//Eagle Attacks
+if instance_exists(battle_eagle){
+
 if option = 0 &amp;&amp; action_menu = 1 {
     x = eagle_attacks.x+125
     y = eagle_attacks.y+20
@@ -160,6 +162,180 @@ if option = 3 &amp;&amp; action_menu = 1 {
             item_menu = 1;
         }
 }
+}
+
+//Deer Attacks
+if instance_exists(battle_deer){
+if option = 0 &amp;&amp; action_menu = 1 {
+    x = deer_attacks.x+125
+    y = deer_attacks.y+20
+    
+    if keyboard_check_released(vk_enter) &amp;&amp; (global.ap &gt;=1){
+        global.ap -= 1;
+        global.player_health += random_range (20, 30);
+        global.player_turn = false;
+        instance_destroy();
+        with (battle_items){
+            instance_destroy();
+        }
+    }
+}
+
+
+
+if option = 1 &amp;&amp; action_menu = 1{
+    x = deer_attacks.x+125
+    y = deer_attacks.y+50
+    
+    //crit chance
+        if keyboard_check_released(vk_enter){
+            if (roll &gt; 90){
+                global.enemy_health -= random_range (45, 50)
+                global.crit = true;
+                global.player_turn = false;
+                instance_destroy();
+            }
+    //miss chance
+        else if miss_chance &gt;= 90 {
+            global.player_turn = false;
+            global.miss = true;
+            instance_create(0,0, Battle_Messages);
+            instance_destroy();            
+        }
+        
+        else global.enemy_health -= random_range(15, 20);
+        global.player_turn = false;
+        instance_destroy();
+         
+         with (battle_items){
+            instance_destroy();
+        }
+    }
+}
+
+if option = 2 &amp;&amp; action_menu = 1 {
+    x = deer_attacks.x+125
+    y = deer_attacks.y+75
+    
+        if keyboard_check_released(vk_enter) &amp;&amp; (global.ap &gt;=2){
+            global.ap -= 2;
+            if (roll &gt; 90){
+                global.enemy_health -= random_range (90, 100)
+                global.crit = true;
+                global.player_turn = false;
+                instance_destroy();
+                
+                with (battle_items){
+                    instance_destroy();
+        }
+                
+            }
+        
+        else global.enemy_health -= random_range (60, 65);
+        global.player_turn = false;
+        instance_destroy();
+    }
+}
+
+//Open Item Menu
+if option = 3 &amp;&amp; action_menu = 1 {
+    x = deer_attacks.x+125
+    y = deer_attacks.y+105
+        if keyboard_check_released(vk_enter) || keyboard_check_pressed (vk_right){
+            instance_create(deer_attacks.x+138, deer_attacks.y+61, battle_items)
+            action_menu = 0;
+            item_menu = 1;
+        }
+}
+}
+
+//Bass Attacks
+if instance_exists(battle_bass){
+if option = 0 &amp;&amp; action_menu = 1 {
+    x = bass_attacks.x+125
+    y = bass_attacks.y+20
+    
+    if keyboard_check_released(vk_enter) &amp;&amp; (global.ap &gt;=1){
+        global.ap -= 1;
+        global.player_health += random_range (20, 30);
+        global.player_turn = false;
+        instance_destroy();
+        with (battle_items){
+            instance_destroy();
+        }
+    }
+}
+
+
+
+if option = 1 &amp;&amp; action_menu = 1{
+    x = bass_attacks.x+125
+    y = bass_attacks.y+50
+    
+    //crit chance
+        if keyboard_check_released(vk_enter){
+            if (roll &gt; 90){
+                global.enemy_health -= random_range (45, 50)
+                global.crit = true;
+                global.player_turn = false;
+                instance_destroy();
+            }
+    //miss chance
+        else if miss_chance &gt;= 90 {
+            global.player_turn = false;
+            global.miss = true;
+            instance_create(0,0, Battle_Messages);
+            instance_destroy();            
+        }
+        
+        else global.enemy_health -= random_range(15, 20);
+        global.player_turn = false;
+        instance_destroy();
+         
+         with (battle_items){
+            instance_destroy();
+        }
+    }
+}
+
+if option = 2 &amp;&amp; action_menu = 1 {
+    x = bass_attacks.x+125
+    y = bass_attacks.y+75
+    
+        if keyboard_check_released(vk_enter) &amp;&amp; (global.ap &gt;=2){
+            global.ap -= 2;
+            if (roll &gt; 90){
+                global.enemy_health -= random_range (90, 100)
+                global.crit = true;
+                global.player_turn = false;
+                instance_destroy();
+                
+                with (battle_items){
+                    instance_destroy();
+        }
+                
+            }
+        
+        else global.enemy_health -= random_range (60, 65);
+        global.player_turn = false;
+        instance_destroy();
+    }
+}
+
+//Open Item Menu
+if option = 3 &amp;&amp; action_menu = 1 {
+    x = bass_attacks.x+125
+    y = bass_attacks.y+105
+        if keyboard_check_released(vk_enter) || keyboard_check_pressed (vk_right){
+            instance_create(bass_attacks.x+138, bass_attacks.y+61, battle_items)
+            action_menu = 0;
+            item_menu = 1;
+        }
+}
+}
+
+
+
 
 
 //Item Menu Up/Down

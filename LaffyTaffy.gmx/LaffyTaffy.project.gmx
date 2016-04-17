@@ -86,6 +86,8 @@
       </objects>
       <objects name="Attacks">
         <object>objects\eagle_attacks</object>
+        <object>objects\deer_attacks</object>
+        <object>objects\bass_attacks</object>
         <object>objects\selection_arrow</object>
         <object>objects\battle_items</object>
       </objects>
