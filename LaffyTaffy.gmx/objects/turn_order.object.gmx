@@ -190,19 +190,19 @@ if global.enemy_health &lt;= 0 {
 
 //Eagle Attack Menu
 if global.player_menu = false  &amp;&amp; instance_exists(battle_eagle) {
-    instance_create(100, 150, eagle_attacks);
+    instance_create(450, 460, eagle_attacks);
     global.player_menu = true;
 }
 
 //Deer Attack Menu
 if global.player_menu = false  &amp;&amp; instance_exists(battle_deer) {
-    instance_create(100, 150, deer_attacks);
+    instance_create(450, 460, deer_attacks);
     global.player_menu = true;
 }
 
 //Bass Attack Menu
 if global.player_menu = false  &amp;&amp; instance_exists(battle_bass) {
-    instance_create(100, 150, bass_attacks);
+    instance_create(450, 460, bass_attacks);
     global.player_menu = true;
 }
 
