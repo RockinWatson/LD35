@@ -65,6 +65,7 @@
   <paths name="paths"/>
   <fonts name="fonts">
     <font>fonts\f_Aldo</font>
+    <font>fonts\f_Aldo_small</font>
   </fonts>
   <objects name="objects">
     <objects name="Battle">
@@ -85,6 +86,7 @@
         <object>objects\Battle_Messages</object>
         <object>objects\enemy_message</object>
         <object>objects\top_bar</object>
+        <object>objects\draw_counts</object>
       </objects>
       <objects name="Attacks">
         <object>objects\eagle_attacks</object>
