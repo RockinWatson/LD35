@@ -16,6 +16,7 @@
         <sprite>sprites\s_battle_items</sprite>
         <sprite>sprites\s_hp_pickup</sprite>
         <sprite>sprites\s_ap_pickup</sprite>
+        <sprite>sprites\s_battle_bar</sprite>
       </sprites>
       <sprites name="OverWorld">
         <sprite>sprites\s_ow_deer</sprite>
@@ -51,7 +52,7 @@
   </sprites>
   <backgrounds name="background">
     <backgrounds name="Battle">
-      <background>background\battle_scene</background>
+      <background>background\bg_battle</background>
     </backgrounds>
     <backgrounds name="OverWorld">
       <background>background\bg_ow_deer</background>
