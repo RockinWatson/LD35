@@ -310,6 +310,7 @@ if option = 1 &amp;&amp; action_menu = 1 {
             instance_destroy();
         }
     }
+}
 
 if option = 2 &amp;&amp; action_menu = 1 {
     x = bass_attacks.x-15
@@ -349,7 +350,7 @@ if option = 3 &amp;&amp; action_menu = 1 {
         }
 }
 }
-}
+
 
 
 

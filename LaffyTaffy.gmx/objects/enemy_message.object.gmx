@@ -71,7 +71,17 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>    draw_text_colour(150, 300, "MISS!", c_red, c_red, c_dkgray, c_dkgray, 1);
+            <string>if instance_exists (battle_eagle){
+    draw_text_colour(battle_eagle.x+150, battle_eagle.y-200, "MISS!", c_red, c_red, c_dkgray, c_dkgray, 1);
+    }
+    
+if instance_exists (battle_deer){
+    draw_text_colour(battle_deer.x+150, battle_deer.y-200, "MISS!", c_red, c_red, c_dkgray, c_dkgray, 1);
+    }
+    
+if instance_exists (battle_bass){
+    draw_text_colour(battle_bass.x+150, battle_bass.y-200, "MISS!", c_red, c_red, c_dkgray, c_dkgray, 1);
+    }
 </string>
           </argument>
         </arguments>
