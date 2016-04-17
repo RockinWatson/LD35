@@ -110,10 +110,10 @@ if (global.crit == true){
 
 //Eagle Action and AP Text
 if instance_exists (eagle_attacks){
-    draw_text_colour(eagle_attacks.x + 25, eagle_attacks.y+40 , "Claw", c_red, c_red, c_dkgray, c_dkgray, 1);
-    draw_text_colour(eagle_attacks.x + 25, eagle_attacks.y+80 , "CaCaw!", c_red, c_red, c_dkgray, c_dkgray, 1);
-    draw_text_colour(eagle_attacks.x + 25, eagle_attacks.y+120 , "Whirlwind", c_red, c_red, c_dkgray, c_dkgray, 1);
-    draw_text_colour(eagle_attacks.x + 202, eagle_attacks.y+1, string(global.ap), c_red, c_red, c_dkgray, c_dkgray, 1);
+    draw_text_colour(eagle_attacks.x + 25, eagle_attacks.y+40 , "Claw", c_yellow, c_yellow, c_yellow, c_yellow, 1);
+    draw_text_colour(eagle_attacks.x + 25, eagle_attacks.y+80 , "CaCaw!", c_yellow, c_yellow, c_yellow, c_yellow, 1);
+    draw_text_colour(eagle_attacks.x + 25, eagle_attacks.y+120 , "Whirlwind", c_yellow, c_yellow, c_yellow, c_yellow, 1);
+    draw_text_colour(eagle_attacks.x + 202, eagle_attacks.y - 2, string(global.ap), c_yellow, c_yellow, c_yellow, c_yellow, 1);
 }
 
 //Items Text
@@ -127,7 +127,7 @@ if instance_exists (deer_attacks){
     draw_text_colour(deer_attacks.x + 25, deer_attacks.y+40 , "Claw", c_red, c_red, c_dkgray, c_dkgray, 1);
     draw_text_colour(deer_attacks.x + 25, deer_attacks.y+80 , "CaCaw!", c_red, c_red, c_dkgray, c_dkgray, 1);
     draw_text_colour(deer_attacks.x + 25, deer_attacks.y+120 , "Whirlwind", c_red, c_red, c_dkgray, c_dkgray, 1);
-    draw_text_colour(deer_attacks.x + 202, deer_attacks.y+1, string(global.ap), c_red, c_red, c_dkgray, c_dkgray, 1);
+    draw_text_colour(deer_attacks.x + 202, deer_attacks.y-2, string(global.ap), c_red, c_red, c_dkgray, c_dkgray, 1);
 }
 
 //Bass Action and AP Text
@@ -135,7 +135,7 @@ if instance_exists (bass_attacks){
     draw_text_colour(bass_attacks.x + 25, bass_attacks.y+40, "Claw", c_red, c_red, c_dkgray, c_dkgray, 1);
     draw_text_colour(bass_attacks.x + 25, bass_attacks.y+80, "CaCaw!", c_red, c_red, c_dkgray, c_dkgray, 1);
     draw_text_colour(bass_attacks.x + 25, bass_attacks.y+120, "Whirlwind", c_red, c_red, c_dkgray, c_dkgray, 1);
-    draw_text_colour(bass_attacks.x + 202, bass_attacks.y+1, string(global.ap), c_red, c_red, c_dkgray, c_dkgray, 1);
+    draw_text_colour(bass_attacks.x + 202, bass_attacks.y-2, string(global.ap), c_red, c_red, c_dkgray, c_dkgray, 1);
 }
 
 
