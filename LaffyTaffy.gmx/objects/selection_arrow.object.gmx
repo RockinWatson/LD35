@@ -243,14 +243,23 @@ if option = 0 &amp;&amp; action_menu = 1{
     }
 }
 
+//Deer Camo
 if option = 1 &amp;&amp; action_menu = 1 {
     x = deer_attacks.x-15
     y = deer_attacks.y+105
     image_xscale = 1;
     
-    if keyboard_check_released(vk_enter) &amp;&amp; (global.ap &gt;=1){
-        global.ap -= 1;
-        global.player_health += irandom_range (20, 30);
+    if keyboard_check_released(vk_enter){
+        global.ap += 1;
+        global.player_attack = true;
+        global.use_ap_potion = true;
+        global.player_combat_text = 1;
+        instance_create(200, 450, deer_camo);
+        instance_create(300, 420, deer_camo);
+        instance_create(100, 465, deer_camo);
+        instance_create(155, 440, deer_camo);  
+        instance_create(200, 400, ap_up);
+        instance_create(0,0,Battle_Messages);
         global.player_turn = false;
         instance_destroy();
         with (battle_items){
@@ -259,6 +268,7 @@ if option = 1 &amp;&amp; action_menu = 1 {
     }
 }
 
+//Deer Megahorn
 if option = 2 &amp;&amp; action_menu = 1 {
     x = deer_attacks.x-15
     y = deer_attacks.y+145
@@ -266,9 +276,13 @@ if option = 2 &amp;&amp; action_menu = 1 {
     
         if keyboard_check_released(vk_enter) &amp;&amp; (global.ap &gt;=2){
             global.ap -= 2;
-            if (roll &gt; 90){
-                global.enemy_health -= irandom_range (90, 100)
+            if (roll &gt;= 90){
+                global.enemy_combat_text = irandom_range (90, 95);
+                global.enemy_health -= global.enemy_combat_text;
                 global.crit = true;
+                global.player_attack = true;
+                instance_create(800,370,deer_megahorn);
+                instance_create(0,0,Battle_Messages);                
                 global.player_turn = false;
                 instance_destroy();
                 
@@ -278,9 +292,15 @@ if option = 2 &amp;&amp; action_menu = 1 {
                 
             }
         
-        else global.enemy_health -= irandom_range (60, 65);
+        else if roll &lt;90 {
+        global.enemy_combat_text = irandom_range (60, 65);
+        global.enemy_health -= global.enemy_combat_text;
+        global.player_attack = true;
+        instance_create (800, 370, deer_megahorn);
+        instance_create(0,0,Battle_Messages);
         global.player_turn = false;
         instance_destroy();
+        }
     }
 }
 
