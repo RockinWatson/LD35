@@ -79,6 +79,7 @@ if enemy_action == 3 &amp;&amp; instance_exists (battle_helicopter) &amp;&amp; g
     global.enemy_combat_text = irandom_range (32, 37)
     global.enemy_health += global.enemy_combat_text;    
     global.enemy_heal = true;
+    instance_create (1000, 450, obj_heal);
     instance_create (0,0,enemy_message);
     global.player_menu = false;
     global.enemy_ap -= 1;
@@ -86,6 +87,7 @@ if enemy_action == 3 &amp;&amp; instance_exists (battle_helicopter) &amp;&amp; g
     global.enemy_combat_text = irandom_range (32, 37)
     global.enemy_health += global.enemy_combat_text; 
     global.enemy_heal = true;
+    instance_create (1000, 450, obj_heal);
     instance_create (0,0,enemy_message);
     global.player_menu = false;
     global.enemy_ap -= 1;
@@ -97,6 +99,7 @@ if enemy_action == 3 &amp;&amp; instance_exists (battle_helicopter) &amp;&amp; g
     global.player_combat_text = irandom_range (20,30);
     global.player_health -= global.player_combat_text;
     global.enemy_attack = true;
+    instance_create (650, 400, slap_chop);
     instance_create (0,0,enemy_message);
     global.player_menu = false
 }

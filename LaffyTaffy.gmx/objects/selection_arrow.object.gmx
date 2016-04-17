@@ -39,6 +39,8 @@ global.miss = false;
 miss_chance = irandom_range (1, 100);
 global.player_heal = false;
 global.player_attack = false;
+global.use_ap_potion = false;
+global.use_hp_potion = false;
 </string>
           </argument>
         </arguments>
@@ -75,7 +77,7 @@ if keyboard_check_pressed(vk_up) &amp;&amp; action_menu = 1{
     
     if option &lt; 0{
         option = 3;
-    } 
+    }
 }
 
 
@@ -83,40 +85,43 @@ if keyboard_check_pressed(vk_up) &amp;&amp; action_menu = 1{
 if instance_exists(battle_eagle){
 
 //Claw
-if option = 0 &amp;&amp; action_menu = 1 {
+if option == 0 &amp;&amp; action_menu == 1 {
     x = eagle_attacks.x - 15
     y = eagle_attacks.y+65
     image_xscale = 1;
     
         //crit chance
-        if keyboard_check_released(vk_enter){
-            if (roll &gt;= 85){
+            if keyboard_check_released(vk_enter){            
+                if (roll &gt;= 85){
                 global.enemy_combat_text = irandom_range (45, 50);
                 global.enemy_health -= global.enemy_combat_text;
-                global.enemy_health -= irandom_range (45, 50)
+                global.player_attack = true;
                 global.crit = true;
+                instance_create(1000, 450, eagle_claw)
                 instance_create(0,0,Battle_Messages);
                 global.player_turn = false;
                 instance_destroy();
             }
     //miss chance
-        else if miss_chance &gt;= 90 {
-            global.player_turn = false;
+            if miss_chance &gt;= 90 &amp;&amp; roll &lt; 85 {
             global.miss = true;
             instance_create(0,0, Battle_Messages);
+            global.player_turn = false;
             instance_destroy();            
         }
         
-        else 
+        else if miss_chance &lt; 90 &amp;&amp; roll &lt; 85{
         global.enemy_combat_text = irandom_range(20, 30);
         global.enemy_health -= global.enemy_combat_text;
         global.player_attack = true;
+        instance_create(1000, 450, eagle_claw);
         instance_create(0,0,Battle_Messages);
         global.player_turn = false;
         instance_destroy();
          
          with (battle_items){
             instance_destroy();
+            }
         }
     }    
 }
@@ -130,14 +135,17 @@ if option = 1 &amp;&amp; action_menu = 1{
     image_xscale = 1;
     if keyboard_check_released(vk_enter) &amp;&amp; (global.ap &gt;=1){
         global.ap -= 1;
-        global.player_health += irandom_range (20, 30);
+        global.player_combat_text = irandom_range (30, 40);
+        global.player_health += global.player_combat_text;
+        global.player_heal = true;
+        instance_create(300, 400, obj_heal);
+        instance_create(0,0,Battle_Messages);
         global.player_turn = false;
         instance_destroy();
         with (battle_items){
             instance_destroy();
         }
     }
-
 }
 
 
@@ -149,9 +157,12 @@ if option = 2 &amp;&amp; action_menu = 1 {
     
         if keyboard_check_released(vk_enter) &amp;&amp; (global.ap &gt;=2){
             global.ap -= 2;
-            if (roll &gt; 90){
-                global.enemy_health -= irandom_range (90, 100)
+            if (roll &gt;= 90){
+                global.enemy_combat_text = irandom_range (90, 95)
+                global.enemy_health -= global.enemy_combat_text;
                 global.crit = true;
+                global.player_attack = true;
+                instance_create(1000,450,eagle_whirl)
                 instance_create(0,0,Battle_Messages);
                 global.player_turn = false;
                 instance_destroy();
@@ -162,9 +173,15 @@ if option = 2 &amp;&amp; action_menu = 1 {
                 
             }
         
-        else global.enemy_health -= irandom_range (60, 65);
+        else if roll &lt; 90{
+        global.enemy_combat_text = irandom_range (60, 65);
+        global.enemy_health -= global.enemy_combat_text;
+        global.player_attack = true;
+        instance_create(1000,450,eagle_whirl)        
+        instance_create(0,0, Battle_Messages);
         global.player_turn = false;
         instance_destroy();
+        }
     }
 }
 
@@ -390,8 +407,12 @@ if item_option = 0 &amp;&amp; item_menu = 1  {
     image_xscale = -1
         
             if keyboard_check_pressed (vk_enter) &amp;&amp; global.hp_potion &gt; 0{
-            global.player_health += 45;
-            global.hp_potion -=1;
+        global.player_combat_text = 45;
+        global.player_health += global.player_combat_text;
+        global.hp_potion -=1;
+        global.use_hp_potion = true;
+        instance_create(300, 400, obj_heal);
+        instance_create(0,0,Battle_Messages);
             item_menu = 0;
             global.player_turn = false;
             instance_destroy();
@@ -409,8 +430,12 @@ if item_option = 1 &amp;&amp; item_menu = 1 {
     image_xscale = -1
     
     if keyboard_check_pressed (vk_enter) &amp;&amp; global.ap_potion &gt; 0{
-        global.ap += 3;
+        global.player_combat_text = 3;
+        global.ap += global.player_combat_text;
         global.ap_potion -=1;
+        global.use_ap_potion = true;
+        instance_create(300, 400, ap_up);
+        instance_create(0,0,Battle_Messages);
         item_menu = 0;
         global.player_turn = false;
         instance_destroy();

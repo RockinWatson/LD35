@@ -36,8 +36,8 @@ if instance_exists (eagle_attacks){
 
 //AP
 if instance_exists (deer_attacks){
-    draw_text_colour(deer_attacks.x + 105, deer_attacks.y+90, "1 AP", c_black, c_black, c_black, c_black, 1)
-    draw_text_colour(deer_attacks.x + 180, deer_attacks.y+130, "2 AP", c_black, c_black, c_black, c_black, 1)
+    draw_text_colour(deer_attacks.x + 118, deer_attacks.y+90, "1 AP", c_black, c_black, c_black, c_black, 1)
+    draw_text_colour(deer_attacks.x + 202, deer_attacks.y+130, "2 AP", c_black, c_black, c_black, c_black, 1)
 }
 
 //AP
