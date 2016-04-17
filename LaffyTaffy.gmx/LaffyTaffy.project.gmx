@@ -172,6 +172,9 @@
     <rooms name="Battle">
       <room>rooms\variable_init_room</room>
       <room>rooms\battle_test</room>
+      <room>rooms\eagle_battle</room>
+      <room>rooms\deer_battle</room>
+      <room>rooms\bass_battle</room>
     </rooms>
   </rooms>
   <help>

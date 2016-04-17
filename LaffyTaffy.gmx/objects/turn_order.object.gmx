@@ -140,7 +140,7 @@ if global.enemy_health &lt;= 0 {
             <kind>1</kind>
             <string>//Create Attack Menu//
 if global.player_menu = false {
-    instance_create(800, 150, eagle_attacks);
+    instance_create(100, 150, eagle_attacks);
     global.player_menu = true;
 }
 
