@@ -8,6 +8,7 @@
     <sounds name="Music">
       <sound>sound\battle_music</sound>
       <sound>sound\driving_music</sound>
+      <sound>sound\intro_music</sound>
     </sounds>
     <sounds name="SFX">
       <sound>sound\sfx_ap_up</sound>
@@ -15,6 +16,7 @@
       <sound>sound\sfx_arrow_select</sound>
       <sound>sound\sfx_boss</sound>
       <sound>sound\sfx_bubble</sound>
+      <sound>sound\sfx_whirlpool</sound>
       <sound>sound\sfx_cacaw</sound>
       <sound>sound\sfx_camo</sound>
       <sound>sound\sfx_claw</sound>
@@ -27,8 +29,10 @@
       <sound>sound\sfx_megahorn</sound>
       <sound>sound\sfx_mudflap</sound>
       <sound>sound\sfx_slapchop</sound>
-      <sound>sound\sfx_whirlpool</sound>
       <sound>sound\sfx_whirlwind</sound>
+      <sound>sound\sfx_shift</sound>
+      <sound>sound\sfx_badboss</sound>
+      <sound>sound\sfx_alarm</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -109,6 +113,8 @@
         <sprite>sprites\s_miss_fisherman</sprite>
         <sprite>sprites\s_miss_truck</sprite>
         <sprite>sprites\s_truck_slap</sprite>
+        <sprite>sprites\s_miss_boss</sprite>
+        <sprite>sprites\s_heal_boss</sprite>
       </sprites>
       <sprite>sprites\s_boss_greatness</sprite>
       <sprite>sprites\s_boss_teamwork</sprite>
@@ -328,6 +334,11 @@
     </objects>
     <object>objects\o_main_dude</object>
     <object>objects\o_clock_dude</object>
+    <objects name="Controllers">
+      <object>objects\music_controller_beginning</object>
+      <object>objects\music_controller_overworld</object>
+      <object>objects\music_opening</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_title_screen</room>
