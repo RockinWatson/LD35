@@ -126,6 +126,8 @@
         <object>objects\ap_up</object>
         <object>objects\slap_chop</object>
         <object>objects\deer_bite</object>
+        <object>objects\deer_camo</object>
+        <object>objects\deer_megahorn</object>
       </objects>
     </objects>
     <objects name="Controllers">

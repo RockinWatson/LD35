@@ -110,6 +110,7 @@ if global.use_ap_potion == true {
         draw_text_colour(185, 50, "+" + string(global.player_combat_text) + "AP", c_blue, c_blue, c_blue, c_blue, 1);
 }
 
+//HP Potion
 if global.use_hp_potion == true {
         draw_text_colour(185, 50, "+" + string(global.player_combat_text), c_blue, c_blue, c_blue, c_blue, 1);
 }
