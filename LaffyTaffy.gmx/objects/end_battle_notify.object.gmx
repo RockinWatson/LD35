@@ -99,14 +99,18 @@ if instance_exists (battle_bass){
           <argument>
             <kind>1</kind>
             <string>if global.hp_notify = true{
-    draw_sprite(s_hp_pickup, 0, 640, 300);
+    //draw_sprite(s_hp_pickup, 0, 640, 300);
+    draw_text_colour(480, 200, "You got an HP Potion!", c_blue, c_blue, c_blue, c_blue, 1);
 }
 if global.ap_notify = true{
-    draw_sprite(s_ap_pickup, 0, 640, 300);
+    draw_text_colour(480, 200, "You got an AP Potion!", c_blue, c_blue, c_blue, c_blue, 1);
+    //draw_sprite(s_ap_pickup, 0, 640, 300);
 }
 if global.hp_ap_notify = true{
-    draw_sprite(s_hp_pickup, 0, 640, 300);
-    draw_sprite(s_ap_pickup, 0, 640, 375);
+    draw_text_colour(480, 200, "You got an AP Potion!", c_blue, c_blue, c_blue, c_blue, 1);
+    draw_text_colour(480, 275, "You got an HP Potion!", c_blue, c_blue, c_blue, c_blue, 1);
+   //draw_sprite(s_hp_pickup, 0, 640, 300);
+    //draw_sprite(s_ap_pickup, 0, 640, 375);
 }
 
 /*if end_message == true {
@@ -114,7 +118,7 @@ if global.hp_ap_notify = true{
 }
 */
 
-draw_text_colour (640, 200, "Press SPACE to continue.", c_black, c_black, c_black, c_black, 1);
+draw_text_colour (435, 680, "Press SPACE To Continue", c_black, c_black, c_black, c_black, 1);
 </string>
           </argument>
         </arguments>

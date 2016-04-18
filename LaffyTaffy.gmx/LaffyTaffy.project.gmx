@@ -128,6 +128,11 @@
         <object>objects\deer_bite</object>
         <object>objects\deer_camo</object>
         <object>objects\deer_megahorn</object>
+        <object>objects\bass_splash</object>
+        <object>objects\bass_whirlpool</object>
+        <object>objects\bass_bubble</object>
+        <object>objects\mudflap_slap</object>
+        <object>objects\dynamite_stick</object>
       </objects>
     </objects>
     <objects name="Controllers">

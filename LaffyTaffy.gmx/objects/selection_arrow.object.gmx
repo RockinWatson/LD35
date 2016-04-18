@@ -135,7 +135,7 @@ if option = 1 &amp;&amp; action_menu = 1{
     image_xscale = 1;
     if keyboard_check_released(vk_enter) &amp;&amp; (global.ap &gt;=1){
         global.ap -= 1;
-        global.player_combat_text = irandom_range (30, 40);
+        global.player_combat_text = irandom_range (50, 60);
         global.player_health += global.player_combat_text;
         global.player_heal = true;
         instance_create(300, 400, obj_heal);
@@ -250,10 +250,9 @@ if option = 1 &amp;&amp; action_menu = 1 {
     image_xscale = 1;
     
     if keyboard_check_released(vk_enter){
-        global.ap += 1;
-        global.player_attack = true;
+        global.ap += 2;
         global.use_ap_potion = true;
-        global.player_combat_text = 1;
+        global.player_combat_text = 2;
         instance_create(200, 450, deer_camo);
         instance_create(300, 420, deer_camo);
         instance_create(100, 465, deer_camo);
@@ -278,26 +277,26 @@ if option = 2 &amp;&amp; action_menu = 1 {
             global.ap -= 2;
             if (roll &gt;= 90){
                 global.enemy_combat_text = irandom_range (90, 95);
-                global.enemy_health -= global.enemy_combat_text;
+                //global.enemy_health -= global.enemy_combat_text;
                 global.crit = true;
                 global.player_attack = true;
                 instance_create(800,370,deer_megahorn);
-                instance_create(0,0,Battle_Messages);                
+                //instance_create(0,0,Battle_Messages);                
                 global.player_turn = false;
                 instance_destroy();
                 
                 with (battle_items){
                     instance_destroy();
-        }
+                }
                 
             }
         
-        else if roll &lt;90 {
+            else if roll &lt;90 {
         global.enemy_combat_text = irandom_range (60, 65);
-        global.enemy_health -= global.enemy_combat_text;
+        //global.enemy_health -= global.enemy_combat_text;
         global.player_attack = true;
         instance_create (800, 370, deer_megahorn);
-        instance_create(0,0,Battle_Messages);
+        //instance_create(0,0,Battle_Messages);
         global.player_turn = false;
         instance_destroy();
         }
@@ -328,21 +327,30 @@ if option = 0 &amp;&amp; action_menu = 1{
     
     //crit chance
         if keyboard_check_released(vk_enter){
-            if (roll &gt; 90){
-                global.enemy_health -= irandom_range (45, 50)
+            if (roll &gt;= 85){
+                global.enemy_combat_text = irandom_range (45, 50);
+                global.enemy_health -= global.enemy_combat_text;
+                global.player_attack = true;
                 global.crit = true;
+                instance_create(1000, 300, bass_splash);
+                instance_create(0,0,Battle_Messages);
                 global.player_turn = false;
                 instance_destroy();
             }
-    //miss chance
-        else if miss_chance &gt;= 90 {
+    //Miss chance
+        else if miss_chance &gt;= 90 &amp;&amp; roll &lt; 85 {
             global.player_turn = false;
             global.miss = true;
             instance_create(0,0, Battle_Messages);
             instance_destroy();            
         }
-        
-        else global.enemy_health -= irandom_range(15, 20);
+        //Normal Splash
+        else if miss_chance &lt;90 &amp;&amp; roll &lt; 85{
+        global.enemy_combat_text = irandom_range (20, 30);
+        global.enemy_health -= global.enemy_combat_text;
+        global.player_attack = true;
+        instance_create(1050,300,bass_splash);
+        instance_create(0,0,Battle_Messages);
         global.player_turn = false;
         instance_destroy();
          
@@ -351,16 +359,21 @@ if option = 0 &amp;&amp; action_menu = 1{
         }
     }
 }
+}
 
-
+//Bass Bubble
 if option = 1 &amp;&amp; action_menu = 1 {
     x = bass_attacks.x-15
     y = bass_attacks.y+105
     image_xscale = 1;
     
     if keyboard_check_released(vk_enter) &amp;&amp; (global.ap &gt;=1){
-        global.ap -= 1;
-        global.player_health += irandom_range (20, 30);
+        global.ap += 1;
+        global.player_combat_text = irandom_range (10, 18)
+        global.player_health += global.player_combat_text;
+        global.player_heal = true;
+        instance_create(300,400,bass_bubble);
+        instance_create(0,0,Battle_Messages);
         global.player_turn = false;
         instance_destroy();
         with (battle_items){
@@ -369,6 +382,7 @@ if option = 1 &amp;&amp; action_menu = 1 {
     }
 }
 
+//Bass Whirlpool
 if option = 2 &amp;&amp; action_menu = 1 {
     x = bass_attacks.x-15
     y = bass_attacks.y+145
@@ -377,8 +391,13 @@ if option = 2 &amp;&amp; action_menu = 1 {
         if keyboard_check_released(vk_enter) &amp;&amp; (global.ap &gt;=2){
             global.ap -= 2;
             if (roll &gt; 90){
-                global.enemy_health -= irandom_range (90, 100)
+            
+                global.enemy_combat_text = irandom_range (90, 95);
+                global.enemy_health -= global.enemy_combat_text;
                 global.crit = true;
+                global.player_attack = true;
+                instance_create(1050, 370, bass_whirlpool);
+                instance_create(0,0,Battle_Messages)
                 global.player_turn = false;
                 instance_destroy();
                 
@@ -388,9 +407,15 @@ if option = 2 &amp;&amp; action_menu = 1 {
                 
             }
         
-        else global.enemy_health -= irandom_range (60, 65);
+        else if roll &lt;90{
+        global.enemy_combat_text = irandom_range (60, 65);
+        global.enemy_health -= global.enemy_combat_text;
+        global.player_attack = true;
+        instance_create (1050, 370, bass_whirlpool);
+        instance_create(0,0,Battle_Messages);
         global.player_turn = false;
         instance_destroy();
+        }
     }
 }
 
