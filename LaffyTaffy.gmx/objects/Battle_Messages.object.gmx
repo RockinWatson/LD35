@@ -78,41 +78,41 @@ draw_set_font(f_Aldo_battle)
 
 //Player Miss Text
 if global.miss == true &amp;&amp; instance_exists (battle_eagle){
-    draw_text_colour(650, 150, "EAGLE MISSED!", c_blue, c_blue, c_blue, c_blue, 1);
+    draw_text_colour(650, 150, "EAGLE MISSED!", global.custom_color8, global.custom_color8, global.custom_color8, global.custom_color8, 1);
 }
 
 if global.miss == true &amp;&amp; instance_exists (battle_deer){
-    draw_text_colour(750, 150, "BUCK MISSED!", c_blue, c_blue, c_blue, c_blue, 1);
+    draw_text_colour(750, 150, "BUCK MISSED!", global.custom_color8, global.custom_color8, global.custom_color8, global.custom_color8, 1);
 }
 
 if global.miss == true &amp;&amp; instance_exists (battle_bass){
-    draw_text_colour(650, 150, "BIG MOUTH BASS MISSED!", c_blue, c_blue, c_blue, c_blue, 1);
+    draw_text_colour(650, 150, "BIG MOUTH BASS MISSED!", global.custom_color8, global.custom_color8, global.custom_color8, global.custom_color8, 1);
 }
 
 if (global.crit == true){
     draw_set_colour(c_white)
-    draw_text_colour(850, 150, "CRITICAL HIT!", c_blue, c_blue, c_blue, c_blue, 1);
-    draw_text_colour(1035, 50, "-" + string(global.enemy_combat_text), c_red, c_red, c_red, c_red, 1);
+    draw_text_colour(850, 150, "CRITICAL HIT!", global.custom_color8, global.custom_color8, global.custom_color8, global.custom_color8, 1);
+    draw_text_colour(1035, 50, "-" + string(global.enemy_combat_text), global.custom_color6, global.custom_color6, global.custom_color6, global.custom_color6, 1);
 }
 
 //Player Attack
 if global.player_attack == true{
-        draw_text_colour(1035, 50, "-" + string(global.enemy_combat_text), c_red, c_red, c_red, c_red, 1);
+        draw_text_colour(1035, 50, "-" + string(global.enemy_combat_text), global.custom_color6, global.custom_color6, global.custom_color6, global.custom_color6, 1);
 }
 
 //Player Heal
 if global.player_heal == true{
-        draw_text_colour(185, 50, "+" + string(global.player_combat_text), c_blue, c_blue, c_blue, c_blue, 1);
+        draw_text_colour(185, 50, "+" + string(global.player_combat_text), global.custom_color8, global.custom_color8, global.custom_color8, global.custom_color8, 1);
 }
 
 //AP Potion
 if global.use_ap_potion == true {
-        draw_text_colour(185, 50, "+" + string(global.player_combat_text) + "AP", c_blue, c_blue, c_blue, c_blue, 1);
+        draw_text_colour(185, 50, "+" + string(global.player_combat_text) + "AP", global.custom_color7, global.custom_color7, global.custom_color7, global.custom_color7, 1);
 }
 
 //HP Potion
 if global.use_hp_potion == true {
-        draw_text_colour(185, 50, "+" + string(global.player_combat_text), c_blue, c_blue, c_blue, c_blue, 1);
+        draw_text_colour(185, 50, "+" + string(global.player_combat_text), global.custom_color8, global.custom_color8, global.custom_color8, global.custom_color8, 1);
 }
 </string>
           </argument>
