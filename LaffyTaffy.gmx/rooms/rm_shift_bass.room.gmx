@@ -68,6 +68,8 @@
     <instance objName="o_ow_orange_spinner" x="1091" y="122" name="inst_81DFB5D1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_orange_spinner" x="159" y="102" name="inst_29B820D4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_orange_spinner" x="68" y="347" name="inst_F4B2C417" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_main_dude" x="579" y="344" name="inst_77C1412D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_menu_shift_bass" x="70" y="778" name="inst_07F6E763" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
