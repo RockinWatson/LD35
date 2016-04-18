@@ -65,7 +65,13 @@
       <sprite>sprites\s_whirl</sprite>
     </sprites>
     <sprites name="Menus">
-      <sprite>sprites\s_eagle_menu</sprite>
+      <sprite>sprites\s_crazy_back</sprite>
+      <sprite>sprites\s_menu_arrow</sprite>
+      <sprite>sprites\s_text_get_to_club</sprite>
+      <sprite>sprites\s_space_to_continue</sprite>
+      <sprite>sprites\s_title_text</sprite>
+      <sprite>sprites\s_bg_bedroom</sprite>
+      <sprite>sprites\s_bg_club</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -78,6 +84,10 @@
       <background>background\bg_ow_bass</background>
       <background>background\bg_parallax_blue</background>
       <background>background\bg_parallax_orange</background>
+    </backgrounds>
+    <backgrounds name="Menus/Scenes">
+      <background>background\bg_bedroom</background>
+      <background>background\bg_club</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
@@ -199,6 +209,18 @@
         <object>objects\o_ow_orange_spinner</object>
       </objects>
     </objects>
+    <objects name="Menu">
+      <object>objects\o_menu_title_text</object>
+      <object>objects\o_menu_continue</object>
+      <object>objects\o_crazy_back</object>
+      <object>objects\o_menu_arrow</object>
+      <object>objects\o_text_get_tol_club</object>
+      <object>objects\o_bedroom</object>
+      <object>objects\o_club</object>
+      <objects name="Controllers">
+        <object>objects\o_menu_arrow_controller</object>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\J_TestRoom</room>
@@ -233,6 +255,7 @@
       <room>rooms\rm_next_day</room>
       <room>rooms\rm_boss</room>
       <room>rooms\rm_get_to_work</room>
+      <room>rooms\rm_club</room>
     </rooms>
   </rooms>
   <help>
