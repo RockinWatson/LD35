@@ -25,7 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_get_to_work);
+            <string>if global.shiftsUsed == 1{
+    room_goto(rm_club_1);
+}else if global.shiftsUsed == 2{
+    room_goto(rm_club_2);
+}else if global.shiftsUsed == 3{
+    room_goto(rm_club_3)
+}
 </string>
           </argument>
         </arguments>
@@ -69,38 +75,108 @@ else if global.countUp == false
 }
 
 //End of Deer level
-if (roomname == "rm_ow_deer") and (global.seconds == 30)
-{
-    instance_deactivate_object(o_ow_truck_spawner_1);
-    instance_deactivate_object(o_ow_truck_spawner_2);
-    instance_deactivate_object(o_ow_truck_spawner_3);
-    instance_deactivate_object(o_ow_truck_spawner_4);
+if (roomname == "rm_ow_deer") and (global.seconds &gt;= 30)
+{  
+    with(o_ow_truck){
+        instance_deactivate_object(o_ow_truck);
+    }
+    with(o_ow_truck_2){
+        instance_deactivate_object(o_ow_truck_2);
+    }
+    with(o_ow_truck_3){
+        instance_deactivate_object(o_ow_truck_3);
+    }
+    with(o_ow_truck_4){
+        instance_deactivate_object(o_ow_truck_4);
+    }
     
-    alarm[0] = 10;
+    with (o_ow_truck_spawner_1){
+        instance_destroy();
+    }
+    with (o_ow_truck_spawner_2){
+        instance_destroy();
+    }
+    with (o_ow_truck_spawner_3){
+        instance_destroy();
+    }
+    with (o_ow_truck_spawner_4){
+        instance_destroy();
+    }
+    alarm[0] = 1;
 }
 
 //End of Eagle Level
-if (roomname == "rm_ow_eagle") and (global.seconds == 30)
+if (roomname == "rm_ow_eagle") and (global.seconds &gt;= 30)
 {
-    instance_deactivate_object(o_ow_heli_spawn_1);
-    instance_deactivate_object(o_ow_heli_spawn_2);
-    instance_deactivate_object(o_ow_heli_spawn_3);
-    instance_deactivate_object(o_ow_heli_spawn_4);
-    instance_deactivate_object(o_ow_heli_spawn_5);
+    with(o_ow_helicopter){
+        instance_deactivate_object(o_ow_helicopter);
+    }
+    with(o_ow_helicopter_2){
+        instance_deactivate_object(o_ow_helicopter_2);
+    }
+    with(o_ow_helicopter_3){
+        instance_deactivate_object(o_ow_helicopter_3);
+    }
+    with(o_ow_helicopter_4){
+        instance_deactivate_object(o_ow_helicopter_4);
+    }
+    with(o_ow_helicopter_5){
+        instance_deactivate_object(o_ow_helicopter_5);
+    }
     
-    alarm[0] = 10;
+    with (o_ow_heli_spawn_1){
+        instance_destroy();
+    }
+    with (o_ow_heli_spawn_2){
+        instance_destroy();
+    }
+    with (o_ow_heli_spawn_3){
+        instance_destroy();
+    }
+    with (o_ow_heli_spawn_4){
+        instance_destroy();
+    }
+    with (o_ow_heli_spawn_5){
+        instance_destroy();
+    }
+    alarm[0] = 1;
 }
 
 //End of Bass Level
-if (roomname == "rm_ow_bass") and (global.seconds == 30)
-{
-    instance_deactivate_object(o_ow_hook_1);
-    instance_deactivate_object(o_ow_hook_2);
-    instance_deactivate_object(o_ow_hook_3);
-    instance_deactivate_object(o_ow_hook_4);
-    instance_deactivate_object(o_ow_hook_5);
+if (roomname == "rm_ow_bass") and (global.seconds &gt;= 30)
+{  
+    with(o_ow_hook_1){
+        instance_deactivate_object(o_ow_hook_1);
+    }
+    with(o_ow_hook_2){
+        instance_deactivate_object(o_ow_hook_2);
+    }
+    with(o_ow_hook_3){
+        instance_deactivate_object(o_ow_hook_3);
+    }
+    with(o_ow_hook_4){
+        instance_deactivate_object(o_ow_hook_4);
+    }
+    with(o_ow_hook_5){
+        instance_deactivate_object(o_ow_hook_5);
+    }
     
-    alarm[0] = 10;
+    with (o_ow_hook_spwn_1){
+        instance_destroy();
+    }
+    with (o_ow_hook_spwn_2){
+        instance_destroy();
+    }
+    with (o_ow_hook_spwn_3){
+        instance_destroy();
+    }
+    with (o_ow_hook_spwn_4){
+        instance_destroy();
+    }
+    with (o_ow_hook_spwn_5){
+        instance_destroy();
+    }
+    alarm[0] = 1;
 } 
 </string>
           </argument>

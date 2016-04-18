@@ -209,7 +209,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_title_screen);
+            <string>room_goto(rm_chracter_select);
 </string>
           </argument>
         </arguments>

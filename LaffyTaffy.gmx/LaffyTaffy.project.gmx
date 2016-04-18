@@ -67,7 +67,7 @@
       <sprite>sprites\s_splash</sprite>
       <sprite>sprites\s_whirl</sprite>
     </sprites>
-    <sprites name="Menus">
+    <sprites name="Menus/Scenes">
       <sprite>sprites\s_crazy_back</sprite>
       <sprite>sprites\s_menu_arrow</sprite>
       <sprite>sprites\s_text_get_to_club</sprite>
@@ -75,6 +75,7 @@
       <sprite>sprites\s_title_text</sprite>
       <sprite>sprites\s_bg_bedroom</sprite>
       <sprite>sprites\s_bg_club</sprite>
+      <sprite>sprites\s_clock_dude</sprite>
     </sprites>
     <sprites name="Shifting">
       <sprite>sprites\s_dude_2_bass</sprite>
@@ -96,6 +97,7 @@
     <backgrounds name="Menus/Scenes">
       <background>background\bg_bedroom</background>
       <background>background\bg_club</background>
+      <background>background\bg_clock</background>
     </backgrounds>
   </backgrounds>
   <paths name="paths"/>
@@ -152,9 +154,9 @@
         <object>objects\mudflap_slap</object>
         <object>objects\dynamite_stick</object>
       </objects>
-    </objects>
-    <objects name="Controllers">
-      <object>objects\room_controller</object>
+      <objects name="Controllers">
+        <object>objects\room_controller</object>
+      </objects>
     </objects>
     <objects name="OverWorld">
       <objects name="Player">
@@ -243,11 +245,16 @@
         <object>objects\o_menu_shift_eagle</object>
         <object>objects\o_menu_shift_bass</object>
       </objects>
+      <object>objects\o_bed_2_clock</object>
+      <object>objects\o_bed_2_main_dude</object>
+      <object>objects\o_club_main_dude</object>
+      <object>objects\o_club_boss</object>
     </objects>
     <object>objects\o_main_dude</object>
+    <object>objects\o_clock_dude</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\J_TestRoom</room>
+    <room>rooms\rm_title_screen</room>
     <room>rooms\S_TestRoom</room>
     <rooms name="Story Lines">
       <room>rooms\rm_ow_bttle_test</room>
@@ -261,6 +268,8 @@
       </rooms>
       <rooms name="Deer Story Line">
         <room>rooms\rm_deer_morph</room>
+        <room>rooms\rm_ow_deer</room>
+        <room>rooms\room30</room>
       </rooms>
     </rooms>
     <rooms name="Battle">
@@ -271,7 +280,6 @@
       <room>rooms\bass_battle</room>
     </rooms>
     <rooms name="Scenes">
-      <room>rooms\rm_title_screen</room>
       <room>rooms\rm_bedroom_1</room>
       <room>rooms\rm_alarmclock</room>
       <room>rooms\rm_bedroom_2</room>
@@ -279,10 +287,10 @@
       <room>rooms\rm_shift_deer</room>
       <room>rooms\rm_shift_eagle</room>
       <room>rooms\rm_shift_bass</room>
-      <room>rooms\rm_next_day</room>
       <room>rooms\rm_boss</room>
-      <room>rooms\rm_get_to_work</room>
-      <room>rooms\rm_club</room>
+      <room>rooms\rm_club_1</room>
+      <room>rooms\rm_club_2</room>
+      <room>rooms\rm_club_3</room>
     </rooms>
     <rooms name="Templates">
       <room>rooms\rm_blue_grad_temp</room>

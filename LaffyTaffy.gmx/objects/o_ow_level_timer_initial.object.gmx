@@ -27,6 +27,11 @@
             <kind>1</kind>
             <string>global.seconds = 0;
 global.countUp = false;
+global.shiftsUsed = 0;
+global.deerUsed = false;
+global.eagleUsed = false;
+global.bassUsed = false;
+
 </string>
           </argument>
         </arguments>

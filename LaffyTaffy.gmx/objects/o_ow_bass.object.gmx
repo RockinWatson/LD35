@@ -110,8 +110,17 @@ if place_meeting(x,y,o_ow_player_blocker_left) and go_left
 //Player Collision
 if place_meeting(x,y,o_ow_hook_1) or place_meeting(x,y,o_ow_hook_2) or place_meeting(x,y,o_ow_hook_3) or place_meeting(x,y,o_ow_hook_4) or place_meeting(x,y,o_ow_hook_5)
 {
-    room_speed = 0;
-    alarm[0] = 3;
+    //Disaable spawners
+    instance_deactivate_all(true);
+    
+    //Disable movement
+    go_right = 10;
+    go_left = 10;
+    go_up = 10;
+    go_down = 10; 
+    
+    //Goto Battle Scene
+    alarm[0] = 15;
 }
 </string>
           </argument>

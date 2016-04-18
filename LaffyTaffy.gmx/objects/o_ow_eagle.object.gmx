@@ -111,10 +111,7 @@ if place_meeting(x,y,o_ow_player_blocker_left) and go_left
 if place_meeting(x,y,o_ow_helicopter) or place_meeting(x,y,o_ow_helicopter_2) or place_meeting(x,y,o_ow_helicopter_3) or place_meeting(x,y,o_ow_helicopter_4) or place_meeting(x,y,o_ow_helicopter_5)
 {
     //Disaable spawners
-    instance_deactivate_object(o_ow_truck_spawner_1);
-    instance_deactivate_object(o_ow_truck_spawner_2);
-    instance_deactivate_object(o_ow_truck_spawner_3);
-    instance_deactivate_object(o_ow_truck_spawner_4);
+    instance_deactivate_all(true);
     
     //Disable movement
     go_right = 10;
