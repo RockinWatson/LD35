@@ -28,6 +28,7 @@
             <string>image_speed = 1;
 alarm[0] = 59;
 alarm[1] = 1;
+audio_play_sound(sfx_ap_up,1,false);
 </string>
           </argument>
         </arguments>

@@ -9,6 +9,27 @@
       <sound>sound\battle_music</sound>
       <sound>sound\driving_music</sound>
     </sounds>
+    <sounds name="SFX">
+      <sound>sound\sfx_ap_up</sound>
+      <sound>sound\sfx_arrow_move</sound>
+      <sound>sound\sfx_arrow_select</sound>
+      <sound>sound\sfx_boss</sound>
+      <sound>sound\sfx_bubble</sound>
+      <sound>sound\sfx_cacaw</sound>
+      <sound>sound\sfx_camo</sound>
+      <sound>sound\sfx_claw</sound>
+      <sound>sound\sfx_next_room</sound>
+      <sound>sound\sfx_death</sound>
+      <sound>sound\sfx_explode</sound>
+      <sound>sound\sfx_get_item</sound>
+      <sound>sound\sfx_heal</sound>
+      <sound>sound\sfx_hit_damage</sound>
+      <sound>sound\sfx_megahorn</sound>
+      <sound>sound\sfx_mudflap</sound>
+      <sound>sound\sfx_slapchop</sound>
+      <sound>sound\sfx_whirlpool</sound>
+      <sound>sound\sfx_whirlwind</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="Player">
@@ -193,6 +214,9 @@
         <object>objects\bass_bubble</object>
         <object>objects\mudflap_slap</object>
         <object>objects\dynamite_stick</object>
+        <object>objects\boss_greatness</object>
+        <object>objects\boss_teamwork</object>
+        <object>objects\boss_nickel</object>
       </objects>
       <objects name="Controllers">
         <object>objects\room_controller</object>

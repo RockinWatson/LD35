@@ -28,6 +28,7 @@
             <string>image_speed = 1;
 alarm[0] = 59;
 alarm[1] = 45;
+audio_play_sound(sfx_claw,1,false);
 </string>
           </argument>
         </arguments>
@@ -50,10 +51,9 @@ alarm[1] = 45;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>    audio_play_sound(sfx_hit_damage,1,false);
     instance_create(0,0,Battle_Messages);
     global.enemy_health -= global.enemy_combat_text;
-
 </string>
           </argument>
         </arguments>
