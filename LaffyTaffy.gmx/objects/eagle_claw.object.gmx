@@ -50,8 +50,10 @@ alarm[1] = 45;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(0,0,Battle_Messages);
-global.enemy_health -= global.enemy_combat_text;
+            <string>
+    instance_create(0,0,Battle_Messages);
+    global.enemy_health -= global.enemy_combat_text;
+
 </string>
           </argument>
         </arguments>
