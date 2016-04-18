@@ -23,12 +23,14 @@
         <sprite>sprites\s_ow_eagle</sprite>
         <sprite>sprites\s_ow_bass</sprite>
       </sprites>
+      <sprite>sprites\s_main_dude</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprites name="Battle">
         <sprite>sprites\s_battle_fisherman</sprite>
         <sprite>sprites\s_battle_helicopter</sprite>
         <sprite>sprites\s_battle_truck</sprite>
+        <sprite>sprites\s_battle_boss</sprite>
       </sprites>
       <sprites name="OverWorld">
         <sprite>sprites\s_ow_helicopter</sprite>
@@ -42,6 +44,7 @@
           <sprite>sprites\s_ow_hook_5</sprite>
         </sprites>
       </sprites>
+      <sprite>sprites\s_robot_boss_scenes</sprite>
     </sprites>
     <sprites name="OverWorld">
       <sprite>sprites\s_player_blocker</sprite>
@@ -72,6 +75,11 @@
       <sprite>sprites\s_title_text</sprite>
       <sprite>sprites\s_bg_bedroom</sprite>
       <sprite>sprites\s_bg_club</sprite>
+    </sprites>
+    <sprites name="Shifting">
+      <sprite>sprites\s_dude_2_bass</sprite>
+      <sprite>sprites\s_dude_2_buck</sprite>
+      <sprite>sprites\s_dude_2_eagle</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -222,10 +230,21 @@
       <object>objects\o_text_get_tol_club</object>
       <object>objects\o_bedroom</object>
       <object>objects\o_club</object>
+      <object>objects\o_menu_deer</object>
+      <object>objects\o_menu_bass</object>
+      <object>objects\o_menu_eagle</object>
       <objects name="Controllers">
-        <object>objects\o_menu_arrow_controller</object>
+        <object>objects\o_menu_control_title</object>
+        <object>objects\o_menu_control_bed_1</object>
+        <object>objects\o_menu_control_alarm</object>
+        <object>objects\o_menu_control_bed_2</object>
+        <object>objects\o_menu_control_select_char</object>
+        <object>objects\o_menu_shift_deer</object>
+        <object>objects\o_menu_shift_eagle</object>
+        <object>objects\o_menu_shift_bass</object>
       </objects>
     </objects>
+    <object>objects\o_main_dude</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\J_TestRoom</room>
@@ -257,10 +276,16 @@
       <room>rooms\rm_alarmclock</room>
       <room>rooms\rm_bedroom_2</room>
       <room>rooms\rm_chracter_select</room>
+      <room>rooms\rm_shift_deer</room>
+      <room>rooms\rm_shift_eagle</room>
+      <room>rooms\rm_shift_bass</room>
       <room>rooms\rm_next_day</room>
       <room>rooms\rm_boss</room>
       <room>rooms\rm_get_to_work</room>
       <room>rooms\rm_club</room>
+    </rooms>
+    <rooms name="Templates">
+      <room>rooms\rm_blue_grad_temp</room>
     </rooms>
   </rooms>
   <help>

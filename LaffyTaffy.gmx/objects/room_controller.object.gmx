@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(battle_test);
+            <string>room_goto(rm_club);
 </string>
           </argument>
         </arguments>
@@ -209,7 +209,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_ow_bttle_test);
+            <string>room_goto(rm_title_screen);
 </string>
           </argument>
         </arguments>

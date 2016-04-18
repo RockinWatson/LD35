@@ -66,17 +66,29 @@ if keyboard_check_pressed(vk_up){
 }
 
 
-//Go to Room
+//Deer Option
 if option == 0{
+    o_menu_arrow.x = battle_deer.x
+    o_menu_arrow.y = battle_deer.y - 175
     if keyboard_check_pressed(vk_space){
         room_goto(rm_ow_eagle);
     }
 }
-if option == 1 and keyboard_check_pressed(vk_space){
-    room_goto(rm_ow_bass);
+//Eagle Option
+if option == 1{
+    o_menu_arrow.x = battle_eagle.x
+    o_menu_arrow.y = battle_eagle.y
+    if keyboard_check_pressed(vk_space){
+        room_goto(rm_ow_bass);
+    }  
 }
-if option == 2 and keyboard_check_pressed(vk_space){
-    room_goto(J_TestRoom);
+//Bass option
+if option == 2{
+    o_menu_arrow.x = battle_bass.x
+    o_menu_arrow.y = battle_bass.y
+    if keyboard_check_pressed(vk_space){
+        room_goto(J_TestRoom);
+    }  
 }
 </string>
           </argument>

@@ -58,6 +58,7 @@
     <instance objName="o_ow_enemy_destroy" x="-192" y="352" name="inst_C14B595F" locked="0" code="" scaleX="2.5" scaleY="23.5" colour="4294967295" rotation="0"/>
     <instance objName="o_menu_title_text" x="640" y="330" name="inst_ED19A196" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_menu_continue" x="630" y="660" name="inst_284C8A25" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_menu_control_title" x="50" y="770" name="inst_3996E326" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
