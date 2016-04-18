@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>image_speed = 1;
 alarm[0] = 59;
+audio_play_sound(sfx_bubble, 1, false)
 </string>
           </argument>
         </arguments>

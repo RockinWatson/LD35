@@ -78,20 +78,24 @@ draw_set_font(f_Aldo_battle)
 
 //Player Miss Text
 if global.miss == true &amp;&amp; instance_exists (battle_eagle){
-    draw_text_colour(650, 150, "EAGLE MISSED!", global.custom_color8, global.custom_color8, global.custom_color8, global.custom_color8, 1);
+    //draw_text_colour(650, 180, "EAGLE MISSED!", global.custom_color8, global.custom_color8, global.custom_color8, global.custom_color8, 1);
+    draw_sprite(s_miss_eagle, 0, 640, 180);
 }
 
 if global.miss == true &amp;&amp; instance_exists (battle_deer){
-    draw_text_colour(750, 150, "BUCK MISSED!", global.custom_color8, global.custom_color8, global.custom_color8, global.custom_color8, 1);
+    //draw_text_colour(750, 180, "BUCK MISSED!", global.custom_color8, global.custom_color8, global.custom_color8, global.custom_color8, 1);
+    draw_sprite(s_miss_buck, 0, 640, 180);
 }
 
 if global.miss == true &amp;&amp; instance_exists (battle_bass){
-    draw_text_colour(650, 150, "BIG MOUTH BASS MISSED!", global.custom_color8, global.custom_color8, global.custom_color8, global.custom_color8, 1);
+    //draw_text_colour(650, 180, "BIG MOUTH BASS MISSED!", global.custom_color8, global.custom_color8, global.custom_color8, global.custom_color8, 1);
+    draw_sprite(s_miss_bass, 0, 640, 180);
 }
 
 if (global.crit == true){
     draw_set_colour(c_white)
-    draw_text_colour(850, 150, "CRITICAL HIT!", global.custom_color8, global.custom_color8, global.custom_color8, global.custom_color8, 1);
+    //draw_text_colour(850, 180, "CRITICAL HIT!", global.custom_color8, global.custom_color8, global.custom_color8, global.custom_color8, 1);
+    draw_sprite(s_critical_hit, 0, 640, 180);
     draw_text_colour(1035, 50, "-" + string(global.enemy_combat_text), global.custom_color6, global.custom_color6, global.custom_color6, global.custom_color6, 1);
 }
 

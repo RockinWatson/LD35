@@ -25,7 +25,15 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (turn_order){
+            <string>if global.enemy_health &lt;=0{
+    audio_play_sound(sfx_get_item,1,false);
+}
+
+if global.player_health &lt;=0{
+    audio_play_sound(sfx_death,1,false);
+}
+
+with (turn_order){
     instance_destroy();
 }
 
@@ -60,21 +68,27 @@ end_message = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if instance_exists (battle_eagle){
-    if keyboard_check_released (vk_space){
-        room_goto(rm_ow_eagle);
+            <string>if global.enemy_health &lt;= 0{
+    if instance_exists (battle_eagle){
+        if keyboard_check_released (vk_space){
+            room_goto(rm_ow_eagle);
+        }
     }
-}
-if instance_exists (battle_deer){
-    if keyboard_check_released (vk_space){
-        room_goto(rm_ow_deer);
+    if instance_exists (battle_deer){
+        if keyboard_check_released (vk_space){
+            room_goto(rm_ow_deer);
+        }
+    }
+
+    if instance_exists (battle_bass){
+        if keyboard_check_released (vk_space){
+            room_goto(rm_ow_bass);
+        }
     }
 }
 
-if instance_exists (battle_bass){
-    if keyboard_check_released (vk_space){
-        room_goto(rm_ow_bass);
-    }
+/*if global.player_health &lt;= 0{
+    audio_play_sound(sfx_death, 1, false);
 }
 </string>
           </argument>
@@ -98,19 +112,24 @@ if instance_exists (battle_bass){
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.hp_notify = true{
+            <string>if global.enemy_health &lt;=0{
+if global.hp_notify = true{
     //draw_sprite(s_hp_pickup, 0, 640, 300);
-    draw_text_colour(480, 200, "You got an HP Potion!", c_blue, c_blue, c_blue, c_blue, 1);
+    //draw_text_colour(480, 200, "You got an HP Potion!", c_blue, c_blue, c_blue, c_blue, 1);
+    draw_sprite(s_got_hp, 0, 960, 280);
 }
 if global.ap_notify = true{
-    draw_text_colour(480, 200, "You got an AP Potion!", c_blue, c_blue, c_blue, c_blue, 1);
+    //draw_text_colour(480, 200, "You got an AP Potion!", c_blue, c_blue, c_blue, c_blue, 1);
     //draw_sprite(s_ap_pickup, 0, 640, 300);
+    draw_sprite(s_got_ap, 0, 960, 280);
 }
 if global.hp_ap_notify = true{
-    draw_text_colour(480, 200, "You got an AP Potion!", c_blue, c_blue, c_blue, c_blue, 1);
-    draw_text_colour(480, 275, "You got an HP Potion!", c_blue, c_blue, c_blue, c_blue, 1);
+    //draw_text_colour(480, 200, "You got an AP Potion!", c_blue, c_blue, c_blue, c_blue, 1);
+    //draw_text_colour(480, 275, "You got an HP Potion!", c_blue, c_blue, c_blue, c_blue, 1);
    //draw_sprite(s_hp_pickup, 0, 640, 300);
     //draw_sprite(s_ap_pickup, 0, 640, 375);
+    draw_sprite(s_got_hp, 0, 960, 280);
+    draw_sprite(s_got_ap, 0, 960, 380);
 }
 
 /*if end_message == true {
@@ -118,7 +137,15 @@ if global.hp_ap_notify = true{
 }
 */
 
-draw_text_colour (435, 680, "Press SPACE To Continue", c_black, c_black, c_black, c_black, 1);
+
+
+//draw_text_colour (435, 680, "Press SPACE To Continue", c_black, c_black, c_black, c_black, 1);
+draw_sprite(s_continue, 0, 960, 180);
+}
+
+if global.player_health &lt;=0{
+    draw_sprite(s_continue, 0, 320, 180);
+}
 </string>
           </argument>
         </arguments>
