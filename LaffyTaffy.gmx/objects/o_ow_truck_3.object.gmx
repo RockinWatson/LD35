@@ -28,6 +28,13 @@
             <string>//Truck Speed
 speed = -5;
 
+//Deer Collision
+if place_meeting(x,y,o_ow_deer)
+{
+    speed = 0;
+    image_alpha = .5;
+}
+
 if place_meeting(x,y,o_ow_truck_3)
 {
     instance_destroy();   
