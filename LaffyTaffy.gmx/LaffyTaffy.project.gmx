@@ -4,7 +4,12 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sounds name="Music">
+      <sound>sound\battle_music</sound>
+      <sound>sound\driving_music</sound>
+    </sounds>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Player">
       <sprites name="Battle">
@@ -151,6 +156,7 @@
         <object>objects\battle_truck</object>
         <object>objects\battle_helicopter</object>
         <object>objects\battle_fisherman</object>
+        <object>objects\battle_boss</object>
       </objects>
       <objects name="Battle Controllers">
         <object>objects\turn_order</object>
@@ -319,6 +325,9 @@
       <room>rooms\variable_init_room</room>
       <room>rooms\battle_test</room>
       <room>rooms\eagle_battle</room>
+      <room>rooms\boss_battle_eagle</room>
+      <room>rooms\boss_battle_deer</room>
+      <room>rooms\boss_battle_bass</room>
       <room>rooms\deer_battle</room>
       <room>rooms\bass_battle</room>
     </rooms>
