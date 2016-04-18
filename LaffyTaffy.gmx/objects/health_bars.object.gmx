@@ -27,6 +27,27 @@
             <kind>1</kind>
             <string>global.enemy_health = 100;
 global.enemy_ap = irandom_range (1,3);
+
+//Yellow
+global.custom_color1 = make_color_rgb(252,238,34)
+//Yellow/Orange
+global.custom_color2 = make_color_rgb(231,183,33)
+//Orange
+global.custom_color3 = make_color_rgb(249,156,28)
+//Red/Orange
+global.custom_color4 = make_color_rgb(231,99,36)
+//Red
+global.custom_color5 = make_color_rgb(238,52,36)
+//Blue
+global.custom_color6 = make_color_rgb(20,13,255)
+//Blue/Green
+global.custom_color7 = make_color_rgb(12,88,232)
+//Light Blue
+global.custom_color8 = make_color_rgb(0,184,255)
+//Lighter Blue
+global.custom_color9 = make_color_rgb(12,232,209)
+//Green
+global.custom_color10 = make_color_rgb(0, 255, 126);
 </string>
           </argument>
         </arguments>
@@ -98,49 +119,49 @@ if (global.ap_potion &lt; 0) {
 draw_set_font(f_Aldo)
 
 //Enemy Health
-draw_healthbar(876, 43, 1265, 115, global.enemy_health, c_black, c_red, c_lime, 1, true, true)
+draw_healthbar(876, 43, 1265, 115, global.enemy_health, global.custom_color5, global.custom_color4, global.custom_color1, 1, true, false)
 
 //Player Health
-draw_healthbar(10, 43, 404, 115, global.player_health, c_black, c_red, c_lime, 0, true, true)
+draw_healthbar(10, 43, 404, 115, global.player_health, global.custom_color5, global.custom_color4, global.custom_color1, 0, true, false)
 
 /*if (global.crit == true){
     draw_set_colour(c_white)
-    draw_text_colour(750, 150, "Critical Hit!", c_yellow, c_yellow, c_orange, c_orange, 1);
+    draw_text_colour(750, 150, "Critical Hit!", global.custom_color1, global.custom_color1, c_orange, c_orange, 1);
 }*/
 
 //Eagle Action and AP Text
 if instance_exists (eagle_attacks){
-    draw_text_colour(eagle_attacks.x + 25, eagle_attacks.y+40 , "Claw", c_yellow, c_yellow, c_yellow, c_yellow, 1);
-    draw_text_colour(eagle_attacks.x + 25, eagle_attacks.y+80 , "CaCaw!", c_yellow, c_yellow, c_yellow, c_yellow, 1);
-    draw_text_colour(eagle_attacks.x + 25, eagle_attacks.y+120 , "Whirlwind", c_yellow, c_yellow, c_yellow, c_yellow, 1);
-    draw_text_colour(eagle_attacks.x + 202, eagle_attacks.y - 2, string(global.ap), c_yellow, c_yellow, c_yellow, c_yellow, 1);
+    draw_text_colour(eagle_attacks.x + 25, eagle_attacks.y+40 , "Claw", global.custom_color1, global.custom_color1, global.custom_color1, global.custom_color1, 1);
+    draw_text_colour(eagle_attacks.x + 25, eagle_attacks.y+80 , "CaCaw!", global.custom_color1, global.custom_color1, global.custom_color1, global.custom_color1, 1);
+    draw_text_colour(eagle_attacks.x + 25, eagle_attacks.y+120 , "Whirlwind", global.custom_color1, global.custom_color1, global.custom_color1, global.custom_color1, 1);
+    draw_text_colour(eagle_attacks.x + 202, eagle_attacks.y - 2, string(global.ap), global.custom_color1, global.custom_color1, global.custom_color1, global.custom_color1, 1);
 }
 
 //Items Text
 if instance_exists (battle_items){
-    draw_text_colour(battle_items.x + 6, battle_items.y-3 , "HP Potion", c_yellow, c_yellow, c_yellow, c_yellow, 1);
-    draw_text_colour(battle_items.x + 13, battle_items.y+35 , "AP Potion", c_yellow, c_yellow, c_yellow, c_yellow, 1);
+    draw_text_colour(battle_items.x + 6, battle_items.y-3 , "HP Potion", global.custom_color1, global.custom_color1, global.custom_color1, global.custom_color1, 1);
+    draw_text_colour(battle_items.x + 13, battle_items.y+35 , "AP Potion", global.custom_color1, global.custom_color1, global.custom_color1, global.custom_color1, 1);
 }
 
 //Deer Action and AP Text
 if instance_exists (deer_attacks){
-    draw_text_colour(deer_attacks.x + 25, deer_attacks.y+40 , "Bite", c_yellow, c_yellow, c_yellow, c_yellow, 1);
-    draw_text_colour(deer_attacks.x + 25, deer_attacks.y+80 , "Camo", c_yellow, c_yellow, c_yellow, c_yellow, 1);
-    draw_text_colour(deer_attacks.x + 25, deer_attacks.y+120 , "Megahorn", c_yellow, c_yellow, c_yellow, c_yellow, 1);
-    draw_text_colour(deer_attacks.x + 202, deer_attacks.y-2, string(global.ap), c_yellow, c_yellow, c_yellow, c_yellow, 1);
+    draw_text_colour(deer_attacks.x + 25, deer_attacks.y+40 , "Bite", global.custom_color1, global.custom_color1, global.custom_color1, global.custom_color1, 1);
+    draw_text_colour(deer_attacks.x + 25, deer_attacks.y+80 , "Camo", global.custom_color1, global.custom_color1, global.custom_color1, global.custom_color1, 1);
+    draw_text_colour(deer_attacks.x + 25, deer_attacks.y+120 , "Megahorn", global.custom_color1, global.custom_color1, global.custom_color1, global.custom_color1, 1);
+    draw_text_colour(deer_attacks.x + 202, deer_attacks.y-2, string(global.ap), global.custom_color1, global.custom_color1, global.custom_color1, global.custom_color1, 1);
 }
 
 //Bass Action and AP Text
 if instance_exists (bass_attacks){
-    draw_text_colour(bass_attacks.x + 25, bass_attacks.y+40, "Splash", c_yellow, c_yellow, c_yellow, c_yellow, 1);
-    draw_text_colour(bass_attacks.x + 25, bass_attacks.y+80, "Bubble", c_yellow, c_yellow, c_yellow, c_yellow, 1);
-    draw_text_colour(bass_attacks.x + 25, bass_attacks.y+120, "Whirlpool", c_yellow, c_yellow, c_yellow, c_yellow, 1);
-    draw_text_colour(bass_attacks.x + 202, bass_attacks.y-2, string(global.ap), c_yellow, c_yellow, c_yellow, c_yellow, 1);
+    draw_text_colour(bass_attacks.x + 25, bass_attacks.y+40, "Splash", global.custom_color1, global.custom_color1, global.custom_color1, global.custom_color1, 1);
+    draw_text_colour(bass_attacks.x + 25, bass_attacks.y+80, "Bubble", global.custom_color1, global.custom_color1, global.custom_color1, global.custom_color1, 1);
+    draw_text_colour(bass_attacks.x + 25, bass_attacks.y+120, "Whirlpool", global.custom_color1, global.custom_color1, global.custom_color1, global.custom_color1, 1);
+    draw_text_colour(bass_attacks.x + 202, bass_attacks.y-2, string(global.ap), global.custom_color1, global.custom_color1, global.custom_color1, global.custom_color1, 1);
 }
 
 
 //Enemy AP
-//draw_text_colour(1000, 100, "Enemey AP: " + string(global.enemy_ap), c_yellow, c_yellow, c_yellow, c_yellow, 1);
+//draw_text_colour(1000, 100, "Enemey AP: " + string(global.enemy_ap), global.custom_color1, global.custom_color1, global.custom_color1, global.custom_color1, 1);
 </string>
           </argument>
         </arguments>

@@ -80,15 +80,15 @@ draw_set_font(f_Aldo_battle);
 //Enemy Miss
 if global.enemy_miss == true{
     if instance_exists (battle_eagle){
-        draw_text_colour(275, 150, "HELLA-CHOPPA MISSED!", c_blue, c_blue, c_blue, c_blue, 1);
+        draw_text_colour(275, 150, "HELLA-CHOPPA MISSED!", global.custom_color8, global.custom_color8, global.custom_color8, global.custom_color8, 1);
         }
     
     if instance_exists (battle_deer){
-        draw_text_colour(275, 150, "TRUCK MISSED!", c_blue, c_blue, c_blue, c_blue, 1);
+        draw_text_colour(275, 150, "TRUCK MISSED!", global.custom_color8, global.custom_color8, global.custom_color8, global.custom_color8, 1);
         }
     
     if instance_exists (battle_bass){
-        draw_text_colour(275, 150, "FISHERMAN MISSED!", c_blue, c_blue, c_blue, c_blue, 1);
+        draw_text_colour(275, 150, "FISHERMAN MISSED!", global.custom_color8, global.custom_color8, global.custom_color8, global.custom_color8, 1);
         }
 
 }
@@ -96,18 +96,18 @@ if global.enemy_miss == true{
 //Enemy Heal
 if global.enemy_heal == true{
    if instance_exists (battle_eagle){
-        draw_text_colour(650, 150, "HELLA-CHOPPA USED HEAL!", c_blue, c_blue, c_blue, c_blue, 1);
-        draw_text_colour(1035, 50, "+" + string(global.player_combat_text), c_blue, c_blue, c_blue, c_blue, 1);
+        draw_text_colour(850, 150, "HELLA-CHOPPA USED HEAL!", global.custom_color8, global.custom_color8, global.custom_color8, global.custom_color8, 1);
+        draw_text_colour(1035, 50, "+" + string(global.player_combat_text), global.custom_color8, global.custom_color8, global.custom_color8, global.custom_color8, 1);
         }
     
     if instance_exists (battle_deer){
-        draw_text_colour(650, 150, "TRUCK USED HEAL!", c_blue, c_blue, c_blue, c_blue, 1);
-        draw_text_colour(1035, 50, "+" + string(global.player_combat_text), c_blue, c_blue, c_blue, c_blue, 1);
+        draw_text_colour(850, 150, "TRUCK USED HEAL!", global.custom_color8, global.custom_color8, global.custom_color8, global.custom_color8, 1);
+        draw_text_colour(1035, 50, "+" + string(global.player_combat_text), global.custom_color8, global.custom_color8, global.custom_color8, global.custom_color8, 1);
         }
     
     if instance_exists (battle_bass){
-        draw_text_colour(650, 150, "FISHERMAN USED HEAL!", c_blue, c_blue, c_blue, c_blue, 1);
-        draw_text_colour(1035, 50, "+" + string(global.player_combat_text), c_blue, c_blue, c_blue, c_blue, 1);
+        draw_text_colour(850, 150, "FISHERMAN USED HEAL!", global.custom_color8, global.custom_color8, global.custom_color8, global.custom_color8, 1);
+        draw_text_colour(1035, 50, "+" + string(global.player_combat_text), global.custom_color8, global.custom_color8, global.custom_color8, global.custom_color8, 1);
         }
 
 }
@@ -115,18 +115,18 @@ if global.enemy_heal == true{
 //Enemy Attack
 if global.enemy_attack == true{
     if instance_exists (battle_eagle){
-        draw_text_colour(275, 150, "HELLA-CHOPPA USED SLAP CHOP!", c_blue, c_blue, c_blue, c_blue, 1)
-        draw_text_colour(185, 50, "-" + string(global.player_combat_text), c_red, c_red, c_red, c_red, 1);
+        draw_text_colour(275, 150, "HELLA-CHOPPA USED SLAP CHOP!", global.custom_color8, global.custom_color8, global.custom_color8, global.custom_color8, 1)
+        draw_text_colour(185, 50, "-" + string(global.player_combat_text), global.custom_color6, global.custom_color6, global.custom_color6, global.custom_color6, 1);
         }
     
     if instance_exists (battle_deer){
-        draw_text_colour(275, 150, "TRUCK USED MUDFLAP SLAP!", c_blue, c_blue, c_blue, c_blue, 1);
-        draw_text_colour(185, 50, "-" + string(global.player_combat_text), c_red, c_red, c_red, c_red, 1);
+        draw_text_colour(275, 150, "TRUCK USED MUDFLAP SLAP!", global.custom_color8, global.custom_color8, global.custom_color8, global.custom_color8, 1);
+        draw_text_colour(185, 50, "-" + string(global.player_combat_text), global.custom_color6, global.custom_color6, global.custom_color6, global.custom_color6, 1);
         }
     
     if instance_exists (battle_bass){
-        draw_text_colour(275, 150, "FISHERMAN DYNAMITE!", c_blue, c_blue, c_blue, c_blue, 1);
-        draw_text_colour(185, 50, "-" + string(global.player_combat_text), c_red, c_red, c_red, c_red, 1);
+        draw_text_colour(275, 150, "FISHERMAN USED DYNAMITE!", global.custom_color8, global.custom_color8, global.custom_color8, global.custom_color8, 1);
+        draw_text_colour(185, 50, "-" + string(global.player_combat_text), global.custom_color6, global.custom_color6, global.custom_color6, global.custom_color6, 1);
         }
 
 }
