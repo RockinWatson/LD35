@@ -53,7 +53,6 @@
   <instances>
     <instance objName="room_controller" x="-32" y="-64" name="inst_595F63A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_eagle" x="140" y="370" name="inst_D8480437" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_ow_level_timer_count" x="30" y="750" name="inst_0CD71703" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_enemy_destroy" x="-230" y="350" name="inst_B82E4C04" locked="0" code="" scaleX="3.48387098312378" scaleY="24.96875" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_player_blocker_down" x="470" y="640" name="inst_BBD67990" locked="0" code="" scaleX="28" scaleY="1.4375" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_player_blocker_up" x="620" y="70" name="inst_DB27DA64" locked="0" code="" scaleX="36.8709678649902" scaleY="2.51612901687622" colour="4294967295" rotation="0"/>
@@ -74,6 +73,8 @@
     <instance objName="o_ow_orange_spinner" x="1230" y="440" name="inst_A25E3189" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_orange_spinner" x="830" y="440" name="inst_39F6981E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_orange_spinner" x="370" y="430" name="inst_5620659D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_boss" x="1600" y="300" name="inst_E47C776F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_eagle_boss" x="0" y="760" name="inst_5D048C2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

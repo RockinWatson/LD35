@@ -50,11 +50,8 @@ change_level = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.shiftsUsed == 3{
-    room_goto(rm_ow_bass_boss)   
-}else{
-    room_goto(rm_ow_bass);
-}
+            <string>room_goto(rm_ow_bass)   
+
 </string>
           </argument>
         </arguments>

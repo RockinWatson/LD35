@@ -48,7 +48,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_bedroom_1);
+            <string>room_goto(rm_goto_next_day);
 </string>
           </argument>
         </arguments>

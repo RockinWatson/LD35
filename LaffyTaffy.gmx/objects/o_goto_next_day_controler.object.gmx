@@ -25,13 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = 250;
+            <string>option = 0;
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="0">
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -48,7 +48,66 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>room_goto(rm_alarmclock);
+            <string>//Arrow Movement
+if keyboard_check_pressed(vk_right){
+    option += 1
+    
+    if option &gt; 2{
+        option = 0;
+    }
+}    
+if keyboard_check_pressed(vk_left){
+    option -= 1
+    
+    if option &lt; 0{
+        option = 2;
+    }
+}
+
+//Continue
+if option == 0 {
+    o_exit_gamed.image_speed = 0;
+    o_restart_game.image_speed = 0;
+    o_continue_game.image_speed = 1;
+    
+    o_menu_arrow.x = o_continue_game.x + 40;
+    o_menu_arrow.y = o_continue_game.y + 125;
+    
+    
+    if keyboard_check_pressed(vk_space){
+        room_goto(rm_bedroom_1);
+    }      
+}
+   
+//restart game
+if option == 1 {
+    o_exit_gamed.image_speed = 0;
+    o_restart_game.image_speed = 1;
+    o_continue_game.image_speed = 0;
+    
+    o_menu_arrow.x = o_restart_game.x + 40;
+    o_menu_arrow.y = o_restart_game.y + 125;
+    
+    
+    if keyboard_check_pressed(vk_space){
+        game_restart();
+    }      
+}
+
+//Exit Game
+if option == 2 {
+    o_exit_gamed.image_speed = 1;
+    o_restart_game.image_speed = 0;
+    o_continue_game.image_speed = 0;
+    
+    o_menu_arrow.x = o_exit_gamed.x + 40;
+    o_menu_arrow.y = o_exit_gamed.y + 125;
+    
+    
+    if keyboard_check_pressed(vk_space){
+        game_end();
+    }      
+}
 </string>
           </argument>
         </arguments>

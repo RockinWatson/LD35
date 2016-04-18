@@ -71,6 +71,7 @@
     <instance objName="o_ow_orange_spinner" x="1150" y="580" name="inst_CB690571" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_orange_spinner" x="1180" y="290" name="inst_668F2960" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_orange_spinner" x="670" y="280" name="inst_DDA26D6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_ow_boss" x="1580" y="340" name="inst_927BB484" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

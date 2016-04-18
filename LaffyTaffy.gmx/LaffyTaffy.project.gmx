@@ -225,6 +225,7 @@
           <object>objects\o_ow_hook_4</object>
           <object>objects\o_ow_hook_5</object>
         </objects>
+        <object>objects\o_ow_boss</object>
       </objects>
       <objects name="Controllers">
         <object>objects\o_ow_level_timer_initial</object>
@@ -291,11 +292,15 @@
         <object>objects\o_menu_club_1</object>
         <object>objects\o_menu_club_2</object>
         <object>objects\o_menu_club_3</object>
+        <object>objects\o_goto_next_day_controler</object>
       </objects>
       <object>objects\o_bed_2_clock</object>
       <object>objects\o_bed_2_main_dude</object>
       <object>objects\o_club_main_dude</object>
       <object>objects\o_club_boss</object>
+      <object>objects\o_exit_gamed</object>
+      <object>objects\o_continue_game</object>
+      <object>objects\o_restart_game</object>
     </objects>
     <object>objects\o_main_dude</object>
     <object>objects\o_clock_dude</object>
@@ -306,17 +311,14 @@
     <rooms name="Story Lines">
       <room>rooms\rm_ow_bttle_test</room>
       <rooms name="Eagle Story Line">
-        <room>rooms\rm_eagle_morph</room>
         <room>rooms\rm_ow_eagle</room>
         <room>rooms\rm_ow_eagle_boss</room>
       </rooms>
       <rooms name="Bass Story Line">
-        <room>rooms\rm_bass_morph</room>
         <room>rooms\rm_ow_bass</room>
         <room>rooms\rm_ow_bass_boss</room>
       </rooms>
       <rooms name="Deer Story Line">
-        <room>rooms\rm_deer_morph</room>
         <room>rooms\rm_ow_deer</room>
         <room>rooms\rm_ow_deer_boss</room>
       </rooms>
@@ -339,7 +341,7 @@
       <room>rooms\rm_shift_deer</room>
       <room>rooms\rm_shift_eagle</room>
       <room>rooms\rm_shift_bass</room>
-      <room>rooms\rm_boss</room>
+      <room>rooms\rm_goto_next_day</room>
       <room>rooms\rm_club_1</room>
       <room>rooms\rm_club_2</room>
       <room>rooms\rm_club_3</room>
