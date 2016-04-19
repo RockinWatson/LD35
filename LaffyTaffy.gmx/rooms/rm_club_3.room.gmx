@@ -56,7 +56,7 @@
     <instance objName="room_controller" x="107" y="854" name="inst_86F92CA5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_club_main_dude" x="-321" y="484" name="inst_4C46674A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_club_boss" x="1584" y="409" name="inst_0B8AB27D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_menu_club_3" x="194" y="863" name="inst_110B5493" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_menu_club_3" x="188" y="859" name="inst_2E646637" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

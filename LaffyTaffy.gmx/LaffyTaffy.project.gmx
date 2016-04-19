@@ -136,6 +136,8 @@
       <sprite>sprites\s_exit_game</sprite>
       <sprite>sprites\s_continue_game</sprite>
       <sprite>sprites\s_restart_game</sprite>
+      <sprite>sprites\s_u_a_loser</sprite>
+      <sprite>sprites\s_u_a_winner</sprite>
     </sprites>
     <sprites name="Shifting">
       <sprite>sprites\s_dude_2_bass</sprite>
@@ -317,6 +319,8 @@
         <object>objects\o_menu_club_2</object>
         <object>objects\o_menu_club_3</object>
         <object>objects\o_goto_next_day_controler</object>
+        <object>objects\o_u_a_winner_control</object>
+        <object>objects\o_u_a_loser_controller</object>
       </objects>
       <object>objects\o_bed_2_clock</object>
       <object>objects\o_bed_2_main_dude</object>
@@ -325,6 +329,18 @@
       <object>objects\o_exit_gamed</object>
       <object>objects\o_continue_game</object>
       <object>objects\o_restart_game</object>
+      <objects name="Text">
+        <object>objects\o_txt_riseAnShine</object>
+        <object>objects\o_txt_whattime</object>
+        <object>objects\o_txt_gametime</object>
+        <object>objects\o_txt_dotdotdot</object>
+        <object>objects\o_txt_also_11</object>
+        <object>objects\o_txt_oh_no_late</object>
+        <object>objects\o_txt_sorry_late</object>
+        <object>objects\o_txt_ran_into_traffic</object>
+      </objects>
+      <object>objects\o_u_a_loser</object>
+      <object>objects\o_u_a_winner</object>
     </objects>
     <object>objects\o_main_dude</object>
     <object>objects\o_clock_dude</object>
@@ -366,6 +382,8 @@
       <room>rooms\rm_shift_eagle</room>
       <room>rooms\rm_shift_bass</room>
       <room>rooms\rm_goto_next_day</room>
+      <room>rooms\rm_winner</room>
+      <room>rooms\rm_loser</room>
       <room>rooms\rm_club_1</room>
       <room>rooms\rm_club_2</room>
       <room>rooms\rm_club_3</room>
