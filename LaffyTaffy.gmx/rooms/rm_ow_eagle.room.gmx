@@ -94,6 +94,7 @@
     <instance objName="o_ow_heli_spawn_3" x="1800" y="350" name="inst_4EDEBF30" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_heli_spawn_4" x="1800" y="500" name="inst_E7E7E0EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_heli_spawn_5" x="1800" y="620" name="inst_6BDF6A4D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="music_controller_overworld" x="0" y="-60" name="inst_99BD2362" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
