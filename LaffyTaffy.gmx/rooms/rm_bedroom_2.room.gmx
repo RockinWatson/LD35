@@ -56,6 +56,8 @@
     <instance objName="o_menu_control_bed_2" x="90" y="859" name="inst_EA0FDB01" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_bed_2_clock" x="-391" y="492" name="inst_B41F9D44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_bed_2_main_dude" x="1455" y="474" name="inst_AD6657C2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="stop_sound" x="-129" y="-154" name="inst_A5E8FD49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="music_controller_overworld" x="-258" y="-18" name="inst_1CACEE2B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

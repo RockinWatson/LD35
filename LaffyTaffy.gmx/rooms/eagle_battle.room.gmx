@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1280</width>
   <height>720</height>
-  <vsnap>32</vsnap>
-  <hsnap>32</hsnap>
+  <vsnap>10</vsnap>
+  <hsnap>10</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -51,7 +51,6 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="room_controller" x="96" y="96" name="inst_596D3BFA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="turn_order" x="64" y="96" name="inst_91CB4E16" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="health_bars" x="64" y="128" name="inst_3B46DCFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="battle_eagle" x="-480" y="320" name="inst_3D833FAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -63,6 +62,7 @@
     <instance objName="o_ow_enemy_destroy" x="-352" y="384" name="inst_412F6ED5" locked="0" code="" scaleX="2.5" scaleY="36.5" colour="4294967295" rotation="0"/>
     <instance objName="top_bar" x="96" y="128" name="inst_6161DDF6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="draw_counts" x="96" y="64" name="inst_83731495" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_menu_title_text" x="640" y="100" name="inst_4194727C" locked="0" code="" scaleX="0.297205746173859" scaleY="0.314814805984497" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

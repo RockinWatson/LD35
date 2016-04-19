@@ -144,6 +144,7 @@
       <sprite>sprites\s_restart_game</sprite>
       <sprite>sprites\s_u_a_loser</sprite>
       <sprite>sprites\s_u_a_winner</sprite>
+      <sprite>sprites\s_controls</sprite>
     </sprites>
     <sprites name="Shifting">
       <sprite>sprites\s_dude_2_bass</sprite>
@@ -196,6 +197,7 @@
         <object>objects\top_bar</object>
         <object>objects\draw_counts</object>
         <object>objects\end_battle_notify</object>
+        <object>objects\boss_controller</object>
       </objects>
       <objects name="Battle Menus">
         <object>objects\eagle_attacks</object>
@@ -225,9 +227,6 @@
         <object>objects\boss_greatness</object>
         <object>objects\boss_teamwork</object>
         <object>objects\boss_nickel</object>
-      </objects>
-      <objects name="Controllers">
-        <object>objects\room_controller</object>
       </objects>
     </objects>
     <objects name="OverWorld">
@@ -347,6 +346,7 @@
       </objects>
       <object>objects\o_u_a_loser</object>
       <object>objects\o_u_a_winner</object>
+      <object>objects\o_controls</object>
     </objects>
     <object>objects\o_main_dude</object>
     <object>objects\o_clock_dude</object>
@@ -354,6 +354,9 @@
       <object>objects\music_controller_beginning</object>
       <object>objects\music_controller_overworld</object>
       <object>objects\music_opening</object>
+      <object>objects\alarm_controller</object>
+      <object>objects\stop_sound</object>
+      <object>objects\music_badboss</object>
     </objects>
   </objects>
   <rooms name="rooms">

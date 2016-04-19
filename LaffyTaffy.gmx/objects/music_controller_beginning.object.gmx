@@ -59,6 +59,8 @@ if !audio_is_playing(driving_music){
 if audio_is_playing(intro_music){
     audio_stop_sound(intro_music);
 }
+
+audio_play_sound(sfx_shift,1,false);
 </string>
           </argument>
         </arguments>

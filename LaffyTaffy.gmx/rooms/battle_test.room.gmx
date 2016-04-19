@@ -51,7 +51,6 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="room_controller" x="128" y="224" name="inst_835B8970" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="turn_order" x="32" y="64" name="inst_520DF030" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="health_bars" x="64" y="64" name="inst_EDBA11FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="battle_helicopter" x="192" y="384" name="inst_B46E6736" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

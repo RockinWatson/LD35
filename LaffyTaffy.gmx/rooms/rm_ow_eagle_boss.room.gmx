@@ -51,7 +51,6 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="room_controller" x="-32" y="-64" name="inst_595F63A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_eagle" x="140" y="370" name="inst_D8480437" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_enemy_destroy" x="-230" y="350" name="inst_B82E4C04" locked="0" code="" scaleX="3.48387098312378" scaleY="24.96875" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_player_blocker_down" x="470" y="640" name="inst_BBD67990" locked="0" code="" scaleX="28" scaleY="1.4375" colour="4294967295" rotation="0"/>
@@ -75,6 +74,7 @@
     <instance objName="o_ow_orange_spinner" x="370" y="430" name="inst_5620659D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_boss" x="1600" y="300" name="inst_E47C776F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_ow_eagle_boss" x="0" y="760" name="inst_5D048C2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="music_badboss" x="-200" y="-60" name="inst_969CDA91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

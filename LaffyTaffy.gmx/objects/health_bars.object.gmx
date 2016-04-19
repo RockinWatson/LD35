@@ -26,7 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>if audio_is_playing(driving_music){
-audio_stop_sound(driving_music)
+    audio_stop_sound(driving_music)
+}
+if audio_is_playing(sfx_badboss){
+    audio_stop_sound(sfx_badboss);
 }
 if !audio_is_playing(battle_music){
     audio_play_sound(battle_music, 1, true)
@@ -85,7 +88,10 @@ global.custom_color10 = make_color_rgb(0, 255, 126);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.player_health &lt;=0{
+            <string>
+
+if global.player_health &lt;=0{
+room_goto(rm_loser)
     if instance_exists(battle_eagle){
         with (battle_eagle)
         instance_destroy();
